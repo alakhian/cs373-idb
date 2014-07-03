@@ -1,0 +1,30 @@
+Page 1 - NBA Teams
+-Name
+-Location
+-Logo
+-Years active
+-Previous team names/locations (if any)
+-Years they went to playoffs and finish - with links to playoffs page
+-Championships won (with year)
+-Current coach
+-Current GM
+-Current owner
+-Current roster - with links to player page
+
+
+Page 2 - Active players
+-Player name
+-Position
+-University or high school (if no NCAA)
+-Years of experience
+-Stats per game - minutes, points, rebounds, assists, blocks, steals, TOs, FG%, FT%
+-Teams player has been on with years - with links to team page
+-Awards (All-star, All-NBA, All-Defensive, etc.)
+-Years they went to playoffs - links to playoff page
+
+
+Page 3 - Playoffs
+-Full playoff brackets dating back to 1983-84 season (first season with 16-team playoffs)
+	-links to team page
+-NBA Finals series ONLY - for all seasons before 1983-84
+-Finals MVPs - links to players
