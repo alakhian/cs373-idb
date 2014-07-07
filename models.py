@@ -7,12 +7,12 @@ class Team(models.Model) :
     location = models.CharField(max_length=20)
     #logo
     #yearsactive
-    #years in playoffs (playoff models)
+    #years with results of season
     #years of championships (playoff models?)
     #current coach
     #current gm
     #current owner
-    #current roster (player models)
+    #current roster (possible links to player models)
 
 class Player(models.Model) :
     name = models.CharField(max_length=30)
