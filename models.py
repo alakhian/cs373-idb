@@ -8,7 +8,6 @@ class Team(models.Model) :
     #logo
     #yearsactive
     #years with results of season
-    #years of championships (playoff models?)
     #current coach
     #current gm
     #current owner
