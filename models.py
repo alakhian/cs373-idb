@@ -18,10 +18,8 @@ class Player(models.Model) :
     position = models.CharField(max_length=2)
     education = models.CharField(max_length=200)
     yearsExp = models.IntegerField(default=0)
-    #separate stats or a list of all of them?
-    #teams played for and years
-    #awards
-    #years went to playoffs (playoff model)
+    #stats by year with team played for, gp, gs, min, fg%, ft%, reb, ast, blk, stl, pts
+    #awards for MVP, Finals MVP, all-NBA 1st team, all-defensive 1st team
 
 class Year(models.Model) :
     #all nba 1st team (players)
