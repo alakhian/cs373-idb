@@ -1,0 +1,19 @@
+name		Spurs
+location	San Antonio, TX
+logo		http://img3.wikia.nocookie.net/__cb20101020224944/nba/images/e/ec/San_Antonio_Spurs_logo.png
+coach		Gregg Popovich
+GM		R. C. Buford
+owner		Peter Holt
+twitter		https://twitter.com/spurs
+results by year
+		year	record	playoffs				MVP awards
+		2005	59-23	Won Championship vs Detroit 4-3		Tim Duncan, Finals MVP
+		2006	63-19	Lost Conference Semis vs Dallas 3-4	None
+		2007	58-24	Won Championship vs Cleveland 4-0	Tony Parker, Finals MVP
+		2008	56-26	Lost Conference Finals vs L.A.L. 1-4	None
+		2009	54-28	Lost first Round vs. Dallas 1-4		None
+		2010	50-32	Lost Conference Semis vs. Phoenix 0-4	None
+		2011	61-21	Lost first Round vs Memphis 2-4		None
+		2012	50-16	Lost Conference Finals vs. OKC 2-4	None
+		2013	58-24	Lost NBA Finals vs. Miami 3-4		None
+		2014	62-20	Won NBA Finals vs. Miami 4-1		Kawhi Leonard, Finals MVP
