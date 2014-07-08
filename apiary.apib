@@ -2,10 +2,59 @@ FORMAT: 1A
 HOST: http://www.google.com
 
 # 373-nba
-Notes API is a *short texts saving* service similar to its physical paper presence on your table.
+373-nba is an API for NBA IDB
 
-# Group Notes
-Notes related resources of the **Notes API**
+## Teams Collection [/teams]
+### List all Teams [GET]
++ Response 200 (application/hal+json)
+
+        [
+            {
+                "id": 1,
+                "name": "Heat",
+                "location: "Miami"
+            },
+            {
+                "id": 2,
+                "name": "Lakers",
+                "location: "Los Angeles"
+            },
+            {
+                "id": 3,
+                "name": "Spurs",
+                "location: "San Antonio"
+            }
+        ]
+
+
+## Team [/teams/{id}]
+A single Team object with all its details
+
++ Parameters
+    + id (required, int) ... Unique team ID in the form of an integer
+
++ Model (application/hal+json)
+ 
+    + Body
+ 
+            {
+                "id": 1,
+                "name": "Heat",
+                "location: "Miami"
+            }
+
+### Retrieve a single Team [GET]
+ 
++ Response 200 (application/json)
+ 
+    [Team][]
+    
++ Response 404 (application/json)
+ 
+        { 
+            "error": "Resource not found" 
+        }
+
 
 ## Notes Collection [/notes]
 ### List all Notes [GET]
@@ -17,14 +66,7 @@ Notes related resources of the **Notes API**
           "id": 2, "title": "Pick-up posters from post-office"
         }]
 
-### Create a Note [POST]
-+ Request (application/json)
 
-        { "title": "Buy cheese and bread for breakfast." }
-
-+ Response 201 (application/json)
-
-        { "id": 3, "title": "Buy cheese and bread for breakfast." }
 
 ## Note [/notes/{id}]
 A single Note object with all its details
