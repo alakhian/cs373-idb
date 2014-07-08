@@ -20,4 +20,28 @@ awards		MVP 2003, 2002
 		Finals MVP 2005, 2003, 1999
 		All-NBA 1st Team 2013, 2007, 2005, 2004, 2003, 2002, 2001, 2000, 1999, 1998
 		All-Defensive 1st Team 2008, 2007, 2005, 2003, 2002, 2001, 2000, 1999
+photo		http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/215.png&w=350&h=254
+twitter		https://twitter.com/TimSlamDuncan
 
+name		Lebron James
+position	SF
+education	St. Vincent-St. Mary High School
+years exp	11
+
+stats		year	team	gp	gs	min	fg%	ft%	reb	ast	blk	stl	pts
+		'04-'05	CLE	80	80	42.4	.472	.750	7.4	7.2	0.7	2.2	27.2
+		'05-'06	CLE	79	79	42.5	.480	.738	7.0	6.6	0.8	1.6	31.4
+		'06-'07	CLE	78	78	40.9	.476	.698	6.7	6.0	0.7	1.6	27.3
+		'07-'08	CLE	75	74	40.4	.484	.712	7.9	7.2	1.1	1.8	30.0
+		'08-'09	CLE	81	81	37.7	.489	.780	7.6	7.2	1.1	1.7	28.4
+		'09-'10	CLE	76	76	39.0	.503	.767	7.3	8.6	1.0	1.6	29.7
+		'10-'11	MIA	79	79	38.8	.510	.759	7.5	7.0	0.6	1.6	26.7
+		'11-'12	MIA	62	62	37.5	.531	.771	7.9	6.2	0.8	1.9	27.1
+		'12-'13	MIA	76	76	37.9	.565	.753	8.0	7.3	0.9	1.7	26.8
+		'13-'14	MIA	77	77	37.7	.567	.750	6.9	6.4	0.3	1.6	27.1
+career stats			842	841	39.5	.497	.747	7.2	6.9	0.8	1.7	27.5
+
+awards		MVP 2013, 2012, 2010, 2009
+		Finals MVP 2013, 2012
+		All-NBA 1st Team 2014, 2013, 2012, 2011, 2010, 2009, 2008, 2006
+		All-Defensive 1st Team 2013, 2012, 2011, 2010, 2009
