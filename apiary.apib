@@ -12,7 +12,7 @@ HOST: http://www.google.com
             {
                 "id": 1,
                 "name": "Heat",
-                "location: "Miami"
+                "location": "Miami"
             },
             {
                 "id": 2,
@@ -22,7 +22,7 @@ HOST: http://www.google.com
             {
                 "id": 3,
                 "name": "Spurs",
-                "location: "San Antonio"
+                "location": "San Antonio"
             }
         ]
 
@@ -40,7 +40,7 @@ A single Team object with all its details
             {
                 "id": 1,
                 "name": "Heat",
-                "location: "Miami"
+                "location": "Miami"
             }
 
 ### Retrieve a single Team [GET]
@@ -56,34 +56,109 @@ A single Team object with all its details
         }
 
 
-## Notes Collection [/notes]
-### List all Notes [GET]
-+ Response 200 (application/json)
+## Players Collection [/players]
+### List all Players [GET]
++ Response 200 (application/hal+json)
 
-        [{
-          "id": 1, "title": "Jogging in park"
-        }, {
-          "id": 2, "title": "Pick-up posters from post-office"
-        }]
+        [
+            {
+                "id": 1,
+                "last name": "Bryant",
+                "first name": "Kobe"
+            },
+            {
+                "id": 2,
+                "last name": "Duncan",
+                "first name": "Tim"
+            },
+            {
+                "id": 3,
+                "last name": "James",
+                "first name": "Lebron"
+            }
+        ]
 
 
-
-## Note [/notes/{id}]
-A single Note object with all its details
+## Player [/players/{id}]
+A single Player object with all its details
 
 + Parameters
-    + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
+    + id (required, int) ... Unique player ID in the form of an integer
 
-### Retrieve a Note [GET]
-+ Response 200 (application/json)
-
-    + Header
-
-            X-My-Header: The Value
-
++ Model (application/hal+json)
+ 
     + Body
+ 
+            {
+                "id": 1,
+                "last name": "Bryant",
+                "first name": "Kobe"
+            }
 
-            { "id": 2, "title": "Pick-up posters from post-office" }
+### Retrieve a single Player [GET]
+ 
++ Response 200 (application/json)
+ 
+    [Player][]
+    
++ Response 404 (application/json)
+ 
+        { 
+            "error": "Resource not found" 
+        }
 
-### Remove a Note [DELETE]
-+ Response 204
+
+## Seasons Collection [/seasons]
+### List all Playoffs [GET]
++ Response 200 (application/hal+json)
+
+        [
+            {
+                "id": 1,
+                "year": "2014",
+                "champion": "Spurs"
+            },
+            {
+                "id": 2,
+                "year": "2013",
+                "champion": "Heat"
+            },
+            {
+                "id": 3,
+                "year": "2012",
+                "champion": "Heat"
+            }
+        ]
+
+
+## Season [/seasons/{id}]
+A single Season object with all its details
+
++ Parameters
+    + id (required, int) ... Unique season ID in the form of an integer
+
++ Model (application/hal+json)
+ 
+    + Body
+ 
+            {
+                "id": 1,
+                "year": "2014",
+                "champion": "Spurs"
+            }
+
+### Retrieve a single Player [GET]
+ 
++ Response 200 (application/json)
+ 
+    [Season][]
+    
++ Response 404 (application/json)
+ 
+        { 
+            "error": "Resource not found" 
+        }
+
+
+
+
