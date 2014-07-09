@@ -3,6 +3,10 @@ from django.db import models
 # Models for the NBA app
 
 class Team(models.Model) :
+    """
+    Contains information for a Team that is current and will not change
+    Each Team has multiple TeamYear's (One-To-Many)
+    """
     name = models.CharField(max_length=20, unique=True)
     location = models.CharField(max_length=30, unique=True)
     coach = models.CharField(max_length=30, unique=True)
@@ -14,7 +18,20 @@ class Team(models.Model) :
     def __unicode__(self) :
         return self.name
 
+    def __str__(self) :
+        return "name: " + self.name + "\n" +
+               "location: " + self.location + "\n" +
+               "coach: " + self.coach + "\n" +
+               "gm: " + self.gm + "\n" + 
+               "owner: " + self.owner + "\n" +
+               "twitter: " + str(self.twitter) + "\n" +
+               "logo: " + str(self.logo) + "\n"
+
 class Player(models.Model) :
+    """
+    Contains information about a Player that is current and will not change
+    Each Player has multiple PlayerYear's (One-To-Many)
+    """
     name = models.CharField(max_length=30, unique=True)
     position = models.CharField(max_length=2)
     education = models.CharField(max_length=200)
@@ -22,10 +39,22 @@ class Player(models.Model) :
     twitter = models.URLField(unique=True)
     photo = models.URLField(unique=True)   
 
-    def __unicode__(self):
+    def __unicode__(self) :
         return self.name
 
+    def __str__(self) :
+        return "name: " + self.name + "\n" +
+               "position: " + self.position + "\n" +
+               "education: " + self.education + "\n" +
+               "years of experience: " + self.years_exp + "\n" +
+               "twitter: " + str(self.twitter) + "\n" +
+               "photo: " + str(self.photo) + "\n"
+
 class Year(models.Model) :
+    """
+    Contains information about a certain Year
+    Each Year has multiple PlayerYear's and TeamYear's (One-To-Many)
+    """
     year = models.CharField(max_length=4, unique=True)
     all_nba = models.ManyToManyField(Player)
     all_def = models.ManyToManyField(Player)
@@ -38,6 +67,9 @@ class Year(models.Model) :
         return self.year
 
 class PlayerYear(models.Model) :
+    """
+    Contains information/statistics about a Player during a certain Year
+    """
     year = models.ForeignKey(Year)
     player = models.ForeignKey(Player)
     team = models.ForeignKey(Team)
@@ -59,11 +91,19 @@ class PlayerYear(models.Model) :
     def __unicode__(self):
         return (self.player.name, self.year.year)
 
+
 class TeamYear(models.Model) :
+    """
+    Contains information/statistics about a Team during a certain Year
+    """
+    team = models.ForeignKey(Team)
     year = models.ForeignKey(Year)
     wins = models.IntegerField()
     losses = models.IntegerField()
-    playoffrecap = models.CharField() 
+    playoffrecap = models.CharField()
+
+    def __unicode__(self) :
+        return (self.year.year, self.team.name)
 
     
 
