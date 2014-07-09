@@ -13,7 +13,7 @@ Data pertaining to NBA Teams
 
         [
             {
-                "id": 1,
+                "id": 0,
                 "name": "Heat",
                 "location": "Miami",
                 "coach": "Erik Spoelstra",
@@ -23,7 +23,7 @@ Data pertaining to NBA Teams
                 "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/200px-Miami_Heat_logo.svg.png>
             },
             {
-                "id": 2,
+                "id": 1,
                 "name": "Lakers",
                 "location: "Los Angeles",
                 "coach": "",
@@ -33,7 +33,7 @@ Data pertaining to NBA Teams
                 "logo": <http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/LosAngeles_Lakers_logo.svg/200px-LosAngeles_Lakers_logo.svg.png>
             },
             {
-                "id": 3,
+                "id": 2,
                 "name": "Spurs",
                 "location": "San Antonio",
                 "coach": "Gregg Popovich",
@@ -56,7 +56,7 @@ A single Team object with all its details
     + Body
  
             {
-                "id": 1,
+                "id": 0,
                 "name": "Heat",
                 "location": "Miami",
                 "coach": "Erik Spoelstra",
@@ -87,7 +87,7 @@ Data pertaining to NBA Players
 
         [
             {
-                "id": 1,
+                "id": 0,
                 "name": "Kobe Bryant",
                 "position": "SG",
                 "education": "Lower Merion High School",
@@ -96,7 +96,7 @@ Data pertaining to NBA Players
                 "photo" = <http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/110.png&w=350&h=254>
             },
             {
-                "id": 2,
+                "id": 1,
                 "name": "Tim Duncan",
                 "position": "PF",
                 "education": "Wake Forest",
@@ -105,10 +105,10 @@ Data pertaining to NBA Players
                 "photo" = <http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/215.png&w=350&h=254>
             },
             {
-                "id": 3,
+                "id": 2,
                 "name": "Lebron James",
                 "position": "SF",
-                "education": "WSt. Vincent-St. Mary High School",
+                "education": "St. Vincent-St. Mary High School",
                 "years_exp": 11,
                 "twitter" = <https://twitter.com/KingJames>,
                 "photo" = <http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254>
@@ -127,7 +127,7 @@ A single Player object with all its details
     + Body
  
             {
-                "id": 1,
+                "id": 0,
                 "name": "Kobe Bryant",
                 "position": "SG",
                 "education": "Lower Merion High School",
@@ -148,7 +148,247 @@ A single Player object with all its details
             "error": "Resource not found" 
         }
 
+## Player Season [/players{id}/seasons]
+### List all Player Seasons [GET]
++ Response 200 (application/hal+json) 
+
+        [
+            {
+                "id": 0,
+                "year": 2005,
+                "team": "Lakers",
+                "gp": 66,
+                "gs": 66,
+                "min": 40.7,
+                "fg_perc": 0.433,
+                "ft_perc": 0.816,
+                "reb": 5.9,
+                "ast": 6.0,
+                "blk": 0.8,
+                "stl": 1.3,
+                "pts": 27.6,
+                "mvp": "False", 
+                "finals_mvp": "False",
+                "all_nba": "False",
+                "all_def": "False"
+            },
+            {
+                "id": 1,
+                "year": 2006,
+                "team": "Lakers",
+                "gp": 80,
+                "gs": 80,
+                "min": 41.0,
+                "fg_perc": 0.450,
+                "ft_perc": 0.850,
+                "reb": 5.3,
+                "ast": 4.5,
+                "blk": 0.4,
+                "stl": 1.8,
+                "pts": 35.4,
+                "mvp": "False", 
+                "finals_mvp": "False", 
+                "all_nba": "True",
+                "all_def": "True"
+            },
+            {
+                "id": 2,
+                "year": 2007,
+                "team": "Lakers",
+                "gp": 77,
+                "gs": 77,
+                "min": 40.8,
+                "fg_perc": 0.463,
+                "ft_perc": 0.868,
+                "reb": 5.7,
+                "ast": 5.4,
+                "blk": 0.5,
+                "stl": 1.4,
+                "pts": 31.6,
+                "mvp": "False", 
+                "finals_mvp": "False", 
+                "all_nba": "True",
+                "all_def": "True"
+            },
+            {
+                "id": 3,
+                "year": 2008,
+                "team": "Lakers",
+                "gp": 82,
+                "gs": 82,
+                "min": 38.9,
+                "fg_perc": 0.459,
+                "ft_perc": 0.840,
+                "reb": 6.3,
+                "ast": 5.4,
+                "blk": 0.5,
+                "stl": 1.8,
+                "pts": 28.3,
+                "mvp": "True", 
+                "finals_mvp": "False", 
+                "all_nba": "True",
+                "all_def": "True"
+            },
+            {
+                "id": 4,
+                "year": 2009,
+                "team": "Lakers",
+                "gp": 82,
+                "gs": 82,
+                "min": 36.1,
+                "fg_perc": 0.467,
+                "ft_perc": 0.856,
+                "reb": 5.2,
+                "ast": 4.9,
+                "blk": 0.5,
+                "stl": 1.5,
+                "pts": 26.8,
+                "mvp": "False", 
+                "finals_mvp": "True", 
+                "all_nba": "True",
+                "all_def": "True"
+            },
+            {
+                "id": 5,
+                "year": 2010,
+                "team": "Lakers",
+                "gp": 73,
+                "gs": 73,
+                "min": 38.8,
+                "fg_perc": 0.456,
+                "ft_perc": 0.811,
+                "reb": 5.4,
+                "ast": 5.0,
+                "blk": 0.3,
+                "stl": 1.5,
+                "pts": 27.0,
+                "mvp": "False", 
+                "finals_mvp": "True", 
+                "all_nba": "True",
+                "all_def": "True"
+            },
+            {
+                "id": 6,
+                "year": 2011,
+                "team": "Lakers",
+                "gp": 82,
+                "gs": 82,
+                "min": 33.9,
+                "fg_perc": 0.451,
+                "ft_perc": 0.828,
+                "reb": 5.1,
+                "ast": 4.7,
+                "blk": 0.1,
+                "stl": 1.2,
+                "pts": 25.3,
+                "mvp": "False",
+                "finals_mvp": "False",
+                "all_nba": "True",
+                "all_def": "True"
+            },
+            {
+                "id": 7,
+                "year": 2012,
+                "team": "Lakers",
+                "gp": 58,
+                "gs": 58,
+                "min": 38.5,
+                "fg_perc": 0.430,
+                "ft_perc": 0.845,
+                "reb": 5.4,
+                "ast": 4.6,
+                "blk": 0.3,
+                "stl": 1.2,
+                "pts": 27.9,
+                "mvp": "False",
+                "finals_mvp": "False",
+                "all_nba": "True",
+                "all_def": "False"
+            },
+            {
+                "id": 8,
+                "year": 2013,
+                "team": "Lakers",
+                "gp": 78,
+                "gs": 78,
+                "min": 38.6,
+                "fg_perc": 0.463,
+                "ft_perc": 0.839,
+                "reb": 5.6,
+                "ast": 6.0,
+                "blk": 0.3,
+                "stl": 1.4,
+                "pts": 27.3,
+                "mvp": "False",
+                "finals_mvp": "False",
+                "all_nba": "True",
+                "all_def": "False"
+            },
+            {
+                "id": 9,
+                "year": 2014,
+                "team": "Lakers",
+                "gp": 6,
+                "gs": 6,
+                "min": 29.5,
+                "fg_perc": 0.425,
+                "ft_perc": 0.857,
+                "reb": 4.3,
+                "ast": 6.3,
+                "blk": 0.2,
+                "stl": 1.2,
+                "pts": 13.8,
+                "mvp": "False",
+                "finals_mvp": "False",
+                "all_nba": "False",
+                "all_def": "False"
+            }
+        ]
+        
+## Player Season [/players/{id}/season/{id}]
+A single Player object with all its details
+
++ Parameters
+    + id (required, int) ... Unique season ID in the form of an integer
+
++ Model (application/hal+json)
+ 
+    + Body
+    
+            {
+                "id": 0,
+                "year": 2005,
+                "team": "Lakers",
+                "gp": 66,
+                "gs": 66,
+                "min": 40.7,
+                "fg_perc": 0.433,
+                "ft_perc": 0.816,
+                "reb": 5.9,
+                "ast": 6.0,
+                "blk": 0.8,
+                "stl": 1.3,
+                "pts": 27.6,
+                "mvp": "False", 
+                "finals_mvp": "False",
+                "all_nba": "False",
+                "all_def": "False"
+            }
+    
+### Retrieve a single Player Season. [GET]
+ 
++ Response 200 (application/json)
+ 
+        [Player][][Season][]
+    
++ Response 404 (application/json)
+ 
+        { 
+            "error": "Resource not found" 
+        }
+
 # Group Season
+Data pertaining to NBA Seasons
 
 ## Seasons Collection [/seasons]
 ### List all Seasons [GET]
@@ -156,17 +396,17 @@ A single Player object with all its details
 
         [
             {
-                "id": 1,
+                "id": 0,
                 "year": "2014",
                 "champion": "Spurs"
             },
             {
-                "id": 2,
+                "id": 1,
                 "year": "2013",
                 "champion": "Heat"
             },
             {
-                "id": 3,
+                "id": 2,
                 "year": "2012",
                 "champion": "Heat"
             }
