@@ -4,6 +4,9 @@ HOST: http://nbaidb.pythonanywhere.com/
 # 373-nba
 373-nba is an API for NBA IDB
 
+# Group Team
+Data pertaining to NBA Teams
+
 ## Teams Collection [/teams]
 ### List all Teams [GET]
 + Response 200 (application/hal+json)
@@ -12,17 +15,32 @@ HOST: http://nbaidb.pythonanywhere.com/
             {
                 "id": 1,
                 "name": "Heat",
-                "location": "Miami"
+                "location": "Miami",
+                "coach": "Erik Spoelstra",
+                "gm": "Pat Riley",
+                "owner": "Micky Arison",
+                "twitter": <https://twitter.com/MiamiHEAT>,
+                "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/200px-Miami_Heat_logo.svg.png>
             },
             {
                 "id": 2,
                 "name": "Lakers",
-                "location: "Los Angeles"
+                "location: "Los Angeles",
+                "coach": "",
+                "gm": "Mitch Kupchak",
+                "owner": "Jerry Buss Family Trust",
+                "twitter": <https://twitter.com/Lakers>,
+                "logo": <http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/LosAngeles_Lakers_logo.svg/200px-LosAngeles_Lakers_logo.svg.png>
             },
             {
                 "id": 3,
                 "name": "Spurs",
-                "location": "San Antonio"
+                "location": "San Antonio",
+                "coach": "Gregg Popovich",
+                "gm": "R.C. Buford",
+                "owner": "Peter Holt",
+                "twitter": <https://twitter.com/spurs>,
+                "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/a/a2/San_Antonio_Spurs.svg/200px-San_Antonio_Spurs.svg.png>
             }
         ]
 
@@ -40,7 +58,12 @@ A single Team object with all its details
             {
                 "id": 1,
                 "name": "Heat",
-                "location": "Miami"
+                "location": "Miami",
+                "coach": "Erik Spoelstra",
+                "gm": "Pat Riley",
+                "owner": "Micky Arison",
+                "twitter": <https://twitter.com/MiamiHEAT>,
+                "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/200px-Miami_Heat_logo.svg.png>
             }
 
 ### Retrieve a single Team [GET]
@@ -55,6 +78,8 @@ A single Team object with all its details
             "error": "Resource not found" 
         }
 
+# Group Player 
+Data pertaining to NBA Players
 
 ## Players Collection [/players]
 ### List all Players [GET]
@@ -63,18 +88,30 @@ A single Team object with all its details
         [
             {
                 "id": 1,
-                "last name": "Bryant",
-                "first name": "Kobe"
+                "name": "Kobe Bryant",
+                "position": "SG",
+                "education": "Lower Merion High School",
+                "years_exp": 18,
+                "twitter" = <https://twitter.com/kobebryant>,
+                "photo" = <http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/110.png&w=350&h=254>
             },
             {
                 "id": 2,
-                "last name": "Duncan",
-                "first name": "Tim"
+                "name": "Tim Duncan",
+                "position": "PF",
+                "education": "Wake Forest",
+                "years_exp": 17,
+                "twitter" = <https://twitter.com/TimSlamDuncan>,
+                "photo" = <http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/215.png&w=350&h=254>
             },
             {
                 "id": 3,
-                "last name": "James",
-                "first name": "Lebron"
+                "name": "Lebron James",
+                "position": "SF",
+                "education": "WSt. Vincent-St. Mary High School",
+                "years_exp": 11,
+                "twitter" = <https://twitter.com/KingJames>,
+                "photo" = <http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254>
             }
         ]
 
@@ -91,8 +128,12 @@ A single Player object with all its details
  
             {
                 "id": 1,
-                "last name": "Bryant",
-                "first name": "Kobe"
+                "name": "Kobe Bryant",
+                "position": "SG",
+                "education": "Lower Merion High School",
+                "years_exp": 18,
+                "twitter" = <https://twitter.com/kobebryant>,
+                "photo" = <http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/110.png&w=350&h=254>
             }
 
 ### Retrieve a single Player [GET]
@@ -107,6 +148,7 @@ A single Player object with all its details
             "error": "Resource not found" 
         }
 
+# Group Season
 
 ## Seasons Collection [/seasons]
 ### List all Seasons [GET]
