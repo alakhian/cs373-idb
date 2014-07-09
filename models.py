@@ -32,10 +32,10 @@ class Year(models.Model) :
     year = models.CharField(max_length=4, unique=True)
     #all nba 1st team (players?)
     #all nba defensive (players?)
-    #finals_mvp = CharField(max_length=30) (player?)
-    #champion = CharField(max_length=200) (team?)
+    #finals_mvp = models.ForeignKey(Player) (correct?)
+    #champion = models.ForeignKey(Team) (correct?)
     finals_logo = models.URLField(unique=True)
-    finals_recap = models.CharField()
+    finals_recap = models.TextField()
 
     def __unicode__(self):
         return self.year
