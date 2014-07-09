@@ -14,6 +14,16 @@ Data pertaining to NBA Teams
         [
             {
                 "id": 0,
+                "name": "Spurs",
+                "location": "San Antonio",
+                "coach": "Gregg Popovich",
+                "gm": "R.C. Buford",
+                "owner": "Peter Holt",
+                "twitter": <https://twitter.com/spurs>,
+                "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/a/a2/San_Antonio_Spurs.svg/200px-San_Antonio_Spurs.svg.png>
+            },
+            {
+                "id": 2,
                 "name": "Heat",
                 "location": "Miami",
                 "coach": "Erik Spoelstra",
@@ -23,7 +33,7 @@ Data pertaining to NBA Teams
                 "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/200px-Miami_Heat_logo.svg.png>
             },
             {
-                "id": 1,
+                "id": 2,
                 "name": "Lakers",
                 "location: "Los Angeles",
                 "coach": "",
@@ -32,16 +42,7 @@ Data pertaining to NBA Teams
                 "twitter": <https://twitter.com/Lakers>,
                 "logo": <http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/LosAngeles_Lakers_logo.svg/200px-LosAngeles_Lakers_logo.svg.png>
             },
-            {
-                "id": 2,
-                "name": "Spurs",
-                "location": "San Antonio",
-                "coach": "Gregg Popovich",
-                "gm": "R.C. Buford",
-                "owner": "Peter Holt",
-                "twitter": <https://twitter.com/spurs>,
-                "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/a/a2/San_Antonio_Spurs.svg/200px-San_Antonio_Spurs.svg.png>
-            }
+            
         ]
 
 
@@ -77,6 +78,125 @@ A single Team object with all its details
         { 
             "error": "Resource not found" 
         }
+
+## Team Season [/teams{id}/seasons]
+### List all Team Seasons [GET]
++ Response 200 (application/hal+json)
+
+        [
+            {
+                "id": 0,
+                "team": "Spurs",
+                "year": 2005,
+                "wins": 59,
+                "losses": 23,
+                "playoffrecap": "Won Championship vs Detroit 4-3"
+            },
+            {
+                "id": 1,
+                "team": "Spurs",
+                "year": 2006,
+                "wins": 63,
+                "losses": 19,
+                "playoffrecap": "Lost Conference Semis vs Dallas 3-4"
+            },
+            {
+                "id": 2,
+                "team": "Spurs",
+                "year": 2007,
+                "wins": 58,
+                "losses": 24,
+                "playoffrecap": "Won Championship vs Cleveland 4-0"
+            },
+            {
+                "id": 3,
+                "team": "Spurs",
+                "year": 2008,
+                "wins": 56,
+                "losses": 26,
+                "playoffrecap": "Lost Conference Finals vs L.A.L. 1-4"
+            },
+            {
+                "id": 4,
+                "team": "Spurs",
+                "year": 2009,
+                "wins": 54,
+                "losses": 28,
+                "playoffrecap": "Lost first Round vs. Dallas 1-4"
+            },
+            {
+                "id": 5,
+                "team": "Spurs",
+                "year": 2010,
+                "wins": 50,
+                "losses": 32,
+                "playoffrecap": "Lost Conference Semis vs. Phoenix 0-4"
+            },
+            {
+                "id": 6,
+                "team": "Spurs",
+                "year": 2011,
+                "wins": 61,
+                "losses": 21,
+                "playoffrecap": "Lost first Round vs Memphis 2-4"
+            },
+            {
+                "id": 7,
+                "team": "Spurs",
+                "year": 2012,
+                "wins": 50,
+                "losses": 16,
+                "playoffrecap": "Lost Conference Finals vs. OKC 2-4"
+            },
+            {
+                "id": 8,
+                "team": "Spurs",
+                "year": 2013,
+                "wins": 58,
+                "losses": 24,
+                "playoffrecap": "Lost NBA Finals vs. Miami 3-4"
+            },
+            {
+                "id": 9,
+                "team": "Spurs",
+                "year": 2014,
+                "wins": 62,
+                "losses": 20,
+                "playoffrecap": "Won NBA Finals vs. Miami 4-1"
+            }
+        ]
+
+## Team Season [/teams/{id}/seasons/{id}]
+A single Team Season object with all its details
+
++ Parameters
+    + id (required, int) ... Unique season ID in the form of an integer
+
++ Model (application/hal+json)
+ 
+    + Body
+    
+            {
+                "id": 0,
+                "team": "Spurs",
+                "year": 2005,
+                "wins": 59,
+                "losses": 23,
+                "playoffrecap": "Won Championship vs Detroit 4-3"
+            }
+
+### Retrieve a single Team Season. [GET]
+ 
++ Response 200 (application/json)
+ 
+        [Team][][Team Season][]
+    
++ Response 404 (application/json)
+ 
+        { 
+            "error": "Resource not found" 
+        }
+
 
 # Group Player 
 Data pertaining to NBA Players
@@ -345,8 +465,8 @@ A single Player object with all its details
             }
         ]
         
-## Player Season [/players/{id}/season/{id}]
-A single Player object with all its details
+## Player Season [/players/{id}/seasons/{id}]
+A single Player Season object with all its details
 
 + Parameters
     + id (required, int) ... Unique season ID in the form of an integer
@@ -375,11 +495,12 @@ A single Player object with all its details
                 "all_def": "False"
             }
     
+
 ### Retrieve a single Player Season. [GET]
  
 + Response 200 (application/json)
  
-        [Player][][Season][]
+        [Player][][Player Season][]
     
 + Response 404 (application/json)
  
@@ -397,18 +518,34 @@ Data pertaining to NBA Seasons
         [
             {
                 "id": 0,
-                "year": "2014",
-                "champion": "Spurs"
-            },
-            {
-                "id": 1,
-                "year": "2013",
-                "champion": "Heat"
-            },
-            {
-                "id": 2,
-                "year": "2012",
-                "champion": "Heat"
+                "year": "2005",
+                "all_nba": 
+                    {
+                        "Tim Duncan", 
+                        "Allen Iverson", 
+                        "Steve Nash", 
+                        "Dirk Nowitzki", 
+                        "Shaquille O'Neal"
+                    },
+                "all_def":
+                    {
+                        "Bruce Bowen", 
+                        "Tim Duncan", 
+                        "Kevin Garnett", 
+                        "Larry Hughes", 
+                        "Ben Wallace"
+                    },
+                "finals_mvp": "Tim Duncan",
+                "champion": "Spurs",
+                "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/6/65/NBA_Finals_05.png/200px-NBA_Finals_05.png>,
+                "finals_recap": "The 2005 NBA Finals was the championship round of the 2004-05 
+                                National Basketball Association season. The San Antonio Spurs of the Western Conference 
+                                faced the Detroit Pistons of the Eastern Conference for the title, with the Spurs holding 
+                                home court advantage and the Pistons as defending champions. The series was played under a 
+                                best-of-seven format. (Unlike the previous three rounds, the team with home court advantage 
+                                hosted games one, two, six, and seven if all were necessary). It also marked the Pistons 
+                                first NBA Finals loss to a team other than the Lakers since 1988. The Spurs won the series 
+                                four games to three in the first NBA Finals to go to a Game 7 since 1994."
             }
         ]
 
@@ -424,9 +561,35 @@ A single Season object with all its details
     + Body
  
             {
-                "id": 1,
-                "year": "2014",
-                "champion": "Spurs"
+                "id": 0,
+                "year": "2005",
+                "all_nba": 
+                    {
+                        "Tim Duncan", 
+                        "Allen Iverson", 
+                        "Steve Nash", 
+                        "Dirk Nowitzki", 
+                        "Shaquille O'Neal"
+                    },
+                "all_def":
+                    {
+                        "Bruce Bowen", 
+                        "Tim Duncan", 
+                        "Kevin Garnett", 
+                        "Larry Hughes", 
+                        "Ben Wallace"
+                    },
+                "finals_mvp": "Tim Duncan",
+                "champion": "Spurs",
+                "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/6/65/NBA_Finals_05.png/200px-NBA_Finals_05.png>,
+                "finals_recap": "The 2005 NBA Finals was the championship round of the 2004-05 
+                                National Basketball Association season. The San Antonio Spurs of the Western Conference 
+                                faced the Detroit Pistons of the Eastern Conference for the title, with the Spurs holding 
+                                home court advantage and the Pistons as defending champions. The series was played under a 
+                                best-of-seven format. (Unlike the previous three rounds, the team with home court advantage 
+                                hosted games one, two, six, and seven if all were necessary). It also marked the Pistons 
+                                first NBA Finals loss to a team other than the Lakers since 1988. The Spurs won the series 
+                                four games to three in the first NBA Finals to go to a Game 7 since 1994."
             }
 
 ### Retrieve a single Season [GET]
