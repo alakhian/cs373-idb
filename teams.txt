@@ -17,3 +17,21 @@ results by year
 		2012	50-16	Lost Conference Finals vs. OKC 2-4	None
 		2013	58-24	Lost NBA Finals vs. Miami 3-4		None
 		2014	62-20	Won NBA Finals vs. Miami 4-1		Kawhi Leonard, Finals MVP
+
+name		Heat
+location	Miami, FL
+logo		http://blog.yellowdoggdesigns.com/wp-content/uploads/2013/06/miami-heat-logo.jpg
+coach		Erik Spoelstra
+GM		Pat Riley
+owner		Micky Arison
+twitter		https://twitter.com/MiamiHEAT
+
+name		Lakers
+location	Los Angeles, CA
+logo		http://upload.wikimedia.org/wikipedia/en/9/9a/Los_Angeles_Lakers_logo.png
+coach		vacant
+GM		Mitch Kupchak
+owner		Jerry Buss Family Trust
+twitter		https://twitter.com/Lakers
+
+
