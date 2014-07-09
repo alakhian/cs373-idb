@@ -100,7 +100,7 @@ class TeamYear(models.Model) :
     year = models.ForeignKey(Year)
     wins = models.IntegerField()
     losses = models.IntegerField()
-    playoffrecap = models.CharField()
+    playoffrecap = models.TextField()
 
     def __unicode__(self) :
         return (self.year.year, self.team.name)
