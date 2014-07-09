@@ -20,8 +20,12 @@ class Player(models.Model) :
     position = models.CharField(max_length=2)
     education = models.CharField(max_length=200)
     years_exp = models.IntegerField(default=0)
+    years_played = models.ManyToManyField(Year)
     #stats by year with team played for, gp, gs, min, fg%, ft%, reb, ast, blk, stl, pts
-    #awards for MVP, Finals MVP, all-NBA 1st team, all-defensive 1st team
+    mvp_years = models.ManyToManyField(Year)
+    finals_mvp_years = models.ManyToManyField(Year)
+    all_nba_years = models.ManyToManyField(Year)
+    all_def_years = models.ManyToManyField(Year)
     twitter = models.URLField(unique=True)
     photo = models.URLField(unique=True)
 
@@ -30,10 +34,10 @@ class Player(models.Model) :
 
 class Year(models.Model) :
     year = models.CharField(max_length=4, unique=True)
-    #all nba 1st team (players?)
-    #all nba defensive (players?)
-    #finals_mvp = models.ForeignKey(Player) (correct?)
-    #champion = models.ForeignKey(Team) (correct?)
+    all_nba = models.ManyToManyField(Player)
+    all_def = models.ManyToManyField(Player)
+    finals_mvp = models.ForeignKey(Player)
+    champion = models.ForeignKey(Team)
     finals_logo = models.URLField(unique=True)
     finals_recap = models.TextField()
 
