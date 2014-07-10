@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id='yearslist'>
+        <p><h3>{{ year.year }} Season</h3></p>
+        <p><img src="{{year.finals_logo}}"></p>
+        <p>Coach: {{ year.finals_recap }}</p>
+
+    </div>
+{% endblock %}

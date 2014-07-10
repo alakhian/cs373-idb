@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Teams</h2>
+    <div id='teamslist'>
+        {% for team in teams %}
+        <h3><a href="/teams/{{team.pk}}">{{ team.name }}</a></h3>
+        <p><img src="{{team.logo}}"></p>
+        <p>Owner: {{ team.owner }}</p>
+        <p>Gm: {{ team.gm }}</p>
+        <p>Coach: {{ team.coach }}</p>
+        {% endfor %}
+    </div>
+    <h2><a href="/players/">Go to Players</a></h2>
+    <h2><a href="/years/">Go to Years</a></h2>
+{% endblock %}

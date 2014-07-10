@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Team Info</h2>
+    <div id='teamslist'>
+        <p><h3>{{ team.name }}</h3></p>
+        <p><img src="{{team.logo}}"></p>
+        <p>Owner: {{ team.owner }}</p>
+        <p>Gm: {{ team.gm }}</p>
+        <p>Coach: {{ team.coach }}</p>
+
+    </div>
+{% endblock %}

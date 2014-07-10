@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Player Info</h2>
+    <div id='playerslist'>
+
+        <h3>{{ player.name }}</h3>
+        <p><img src="{{player.photo}}"></p>
+        <p>Position: {{ player.position }}</p>
+        <p>Education: {{ player.education }}</p>
+        <p>Experience: {{ player.years_exp }} years</p>
+
+    </div>
+{% endblock %}

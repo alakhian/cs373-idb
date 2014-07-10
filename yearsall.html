@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <div id='yearslist'>
+        {% for year in years %}
+        <h3><a href="/years/{{year.pk}}">{{ year.year }}</a> Season</h3>
+        <p><img src="{{year.finals_logo}}"></p>
+        <p>Coach: {{ year.finals_recap }}</p>
+
+        {% endfor %}
+    </div>
+    <h2><a href="/players/">Go to Players</a></h2>
+    <h2><a href="/teams/">Go to Teams</a></h2>
+{% endblock %}
