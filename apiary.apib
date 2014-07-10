@@ -52,26 +52,21 @@ A single Team object with all its details
 + Parameters
     + id (required, int) ... Unique team ID in the form of an integer
 
-+ Model (application/hal+json)
- 
-    + Body
- 
-            {
-                "id": 0,
-                "name": "Heat",
-                "location": "Miami",
-                "coach": "Erik Spoelstra",
-                "gm": "Pat Riley",
-                "owner": "Micky Arison",
-                "twitter": <https://twitter.com/MiamiHEAT>,
-                "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/200px-Miami_Heat_logo.svg.png>
-            }
 
 ### Retrieve a single Team [GET]
  
 + Response 200 (application/json)
  
-    [Team][]
+        {
+            "id": 0,
+            "name": "Heat",
+            "location": "Miami",
+            "coach": "Erik Spoelstra",
+            "gm": "Pat Riley",
+            "owner": "Micky Arison",
+            "twitter": <https://twitter.com/MiamiHEAT>,
+            "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/200px-Miami_Heat_logo.svg.png>
+        }
     
 + Response 404 (application/json)
  
@@ -172,24 +167,18 @@ A single Team Season object with all its details
 + Parameters
     + id (required, int) ... Unique season ID in the form of an integer
 
-+ Model (application/hal+json)
- 
-    + Body
-    
-            {
-                "id": 0,
-                "team": "Spurs",
-                "year": 2005,
-                "wins": 59,
-                "losses": 23,
-                "playoffrecap": "Won Championship vs Detroit 4-3"
-            }
-
 ### Retrieve a single Team Season. [GET]
  
 + Response 200 (application/json)
  
-        [Team][][Team Season][]
+        {
+            "id": 0,
+            "team": "Spurs",
+            "year": 2005,
+            "wins": 59,
+            "losses": 23,
+            "playoffrecap": "Won Championship vs Detroit 4-3"
+        }
     
 + Response 404 (application/json)
  
@@ -242,25 +231,21 @@ A single Player object with all its details
 + Parameters
     + id (required, int) ... Unique player ID in the form of an integer
 
-+ Model (application/hal+json)
- 
-    + Body
- 
-            {
-                "id": 0,
-                "name": "Kobe Bryant",
-                "position": "SG",
-                "education": "Lower Merion High School",
-                "years_exp": 18,
-                "twitter" = <https://twitter.com/kobebryant>,
-                "photo" = <http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/110.png&w=350&h=254>
-            }
 
 ### Retrieve a single Player [GET]
  
 + Response 200 (application/json)
  
-    [Player][]
+    
+        {
+            "id": 0,
+            "name": "Kobe Bryant",
+            "position": "SG",
+            "education": "Lower Merion High School",
+            "years_exp": 18,
+            "twitter" = <https://twitter.com/kobebryant>,
+            "photo" = <http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/110.png&w=350&h=254>
+        }
     
 + Response 404 (application/json)
  
