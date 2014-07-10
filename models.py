@@ -19,12 +19,12 @@ class Team(models.Model) :
         return self.name
 
     def __str__(self) :
-        return "name: " + self.name + "\n" +
-               "location: " + self.location + "\n" +
-               "coach: " + self.coach + "\n" +
-               "gm: " + self.gm + "\n" + 
-               "owner: " + self.owner + "\n" +
-               "twitter: " + str(self.twitter) + "\n" +
+        return "name: " + self.name + "\n" \
+               "location: " + self.location + "\n" \
+               "coach: " + self.coach + "\n" \
+               "gm: " + self.gm + "\n" \
+               "owner: " + self.owner + "\n" \
+               "twitter: " + str(self.twitter) + "\n" \
                "logo: " + str(self.logo) + "\n"
 
 class Player(models.Model) :
@@ -43,11 +43,11 @@ class Player(models.Model) :
         return self.name
 
     def __str__(self) :
-        return "name: " + self.name + "\n" +
-               "position: " + self.position + "\n" +
-               "education: " + self.education + "\n" +
-               "years of experience: " + self.years_exp + "\n" +
-               "twitter: " + str(self.twitter) + "\n" +
+        return "name: " + self.name + "\n" \
+               "position: " + self.position + "\n" \
+               "education: " + self.education + "\n" \
+               "years of experience: " + self.years_exp + "\n" \
+               "twitter: " + str(self.twitter) + "\n" \
                "photo: " + str(self.photo) + "\n"
 
 class Year(models.Model) :
