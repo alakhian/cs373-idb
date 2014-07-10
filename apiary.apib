@@ -456,36 +456,29 @@ A single Player Season object with all its details
 + Parameters
     + id (required, int) ... Unique season ID in the form of an integer
 
-+ Model (application/hal+json)
- 
-    + Body
-    
-            {
-                "id": 0,
-                "year": 2005,
-                "team": "Lakers",
-                "gp": 66,
-                "gs": 66,
-                "min": 40.7,
-                "fg_perc": 0.433,
-                "ft_perc": 0.816,
-                "reb": 5.9,
-                "ast": 6.0,
-                "blk": 0.8,
-                "stl": 1.3,
-                "pts": 27.6,
-                "mvp": "False", 
-                "finals_mvp": "False",
-                "all_nba": "False",
-                "all_def": "False"
-            }
-    
-
 ### Retrieve a single Player Season. [GET]
  
 + Response 200 (application/json)
  
-        [Player][][Player Season][]
+        {
+            "id": 0,
+            "year": 2005,
+            "team": "Lakers",
+            "gp": 66,
+            "gs": 66,
+            "min": 40.7,
+            "fg_perc": 0.433,
+            "ft_perc": 0.816,
+            "reb": 5.9,
+            "ast": 6.0,
+            "blk": 0.8,
+            "stl": 1.3,
+            "pts": 27.6,
+            "mvp": "False", 
+            "finals_mvp": "False",
+            "all_nba": "False",
+            "all_def": "False"
+        }
     
 + Response 404 (application/json)
  
@@ -554,15 +547,12 @@ Data pertaining to NBA Seasons
                     },
                 "finals_mvp": "Dwyane Wade",
                 "champion": "Heat",
-                "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/6/65/NBA_Finals_05.png/200px-NBA_Finals_05.png>,
-                "finals_recap": "The 2005 NBA Finals was the championship round of the 2004-05 
-                                National Basketball Association season. The San Antonio Spurs of the Western Conference 
-                                faced the Detroit Pistons of the Eastern Conference for the title, with the Spurs holding 
-                                home court advantage and the Pistons as defending champions. The series was played under a 
-                                best-of-seven format. (Unlike the previous three rounds, the team with home court advantage 
-                                hosted games one, two, six, and seven if all were necessary). It also marked the Pistons 
-                                first NBA Finals loss to a team other than the Lakers since 1988. The Spurs won the series 
-                                four games to three in the first NBA Finals to go to a Game 7 since 1994."
+                "logo": <http://teampins.com/nbafinalslog1.jpg>,
+                "finals_recap": "The 2006 NBA Finals was the championship series of the 2005–06 National Basketball 
+                                Association season. The Miami Heat won the title in six games over the Dallas 
+                                Mavericks, becoming the third team—after the 1969 Celtics and the 1977 Trail Blazers—to 
+                                win a championship after trailing 0–2 in the series. Heat guard Dwyane Wade was named 
+                                Most Valuable Player of the series."
             }
             {
                 "id": 2,
@@ -585,15 +575,14 @@ Data pertaining to NBA Seasons
                     },
                 "finals_mvp": "Tony Parker",
                 "champion": "Spurs",
-                "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/6/65/NBA_Finals_05.png/200px-NBA_Finals_05.png>,
-                "finals_recap": "The 2005 NBA Finals was the championship round of the 2004-05 
-                                National Basketball Association season. The San Antonio Spurs of the Western Conference 
-                                faced the Detroit Pistons of the Eastern Conference for the title, with the Spurs holding 
-                                home court advantage and the Pistons as defending champions. The series was played under a 
-                                best-of-seven format. (Unlike the previous three rounds, the team with home court advantage 
-                                hosted games one, two, six, and seven if all were necessary). It also marked the Pistons 
-                                first NBA Finals loss to a team other than the Lakers since 1988. The Spurs won the series 
-                                four games to three in the first NBA Finals to go to a Game 7 since 1994."
+                "logo": <http://upload.wikimedia.org/wikipedia/en/7/79/2007_NBA_Finals.png>,
+                "finals_recap": "The 2007 NBA Finals was the championship series of the 2006–07 National 
+                                Basketball Association season, and was the conclusion of the 2007 NBA 
+                                Playoffs. The best-of-seven series was played between the Western Conference 
+                                champion San Antonio Spurs and the Eastern Conference champion Cleveland 
+                                Cavaliers. This was Cleveland's first trip to the NBA Finals in their 
+                                franchise history and San Antonio's fourth. The Spurs swept the Cavaliers 
+                                4-0. Tony Parker was named the series' MVP."
             }
         ]
 
@@ -603,48 +592,43 @@ A single Season object with all its details
 
 + Parameters
     + id (required, int) ... Unique season ID in the form of an integer
-
-+ Model (application/hal+json)
- 
-    + Body
- 
-            {
-                "id": 0,
-                "year": "2005",
-                "all_nba": 
-                    {
-                        "Tim Duncan", 
-                        "Allen Iverson", 
-                        "Steve Nash", 
-                        "Dirk Nowitzki", 
-                        "Shaquille O'Neal"
-                    },
-                "all_def":
-                    {
-                        "Bruce Bowen", 
-                        "Tim Duncan", 
-                        "Kevin Garnett", 
-                        "Larry Hughes", 
-                        "Ben Wallace"
-                    },
-                "finals_mvp": "Tim Duncan",
-                "champion": "Spurs",
-                "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/6/65/NBA_Finals_05.png/200px-NBA_Finals_05.png>,
-                "finals_recap": "The 2005 NBA Finals was the championship round of the 2004-05 
-                                National Basketball Association season. The San Antonio Spurs of the Western Conference 
-                                faced the Detroit Pistons of the Eastern Conference for the title, with the Spurs holding 
-                                home court advantage and the Pistons as defending champions. The series was played under a 
-                                best-of-seven format. (Unlike the previous three rounds, the team with home court advantage 
-                                hosted games one, two, six, and seven if all were necessary). It also marked the Pistons 
-                                first NBA Finals loss to a team other than the Lakers since 1988. The Spurs won the series 
-                                four games to three in the first NBA Finals to go to a Game 7 since 1994."
-            }
+    
 
 ### Retrieve a single Season [GET]
  
 + Response 200 (application/json)
  
-    [Season][]
+        {
+            "id": 0,
+            "year": "2005",
+            "all_nba": 
+                {
+                    "Tim Duncan", 
+                    "Allen Iverson", 
+                    "Steve Nash", 
+                    "Dirk Nowitzki", 
+                    "Shaquille O'Neal"
+                },
+            "all_def":
+                {
+                    "Bruce Bowen", 
+                    "Tim Duncan", 
+                    "Kevin Garnett", 
+                    "Larry Hughes", 
+                    "Ben Wallace"
+                },
+            "finals_mvp": "Tim Duncan",
+            "champion": "Spurs",
+            "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/6/65/NBA_Finals_05.png/200px-NBA_Finals_05.png>,
+            "finals_recap": "The 2005 NBA Finals was the championship round of the 2004-05 
+                            National Basketball Association season. The San Antonio Spurs of the Western Conference 
+                            faced the Detroit Pistons of the Eastern Conference for the title, with the Spurs holding 
+                            home court advantage and the Pistons as defending champions. The series was played under a 
+                            best-of-seven format. (Unlike the previous three rounds, the team with home court advantage 
+                            hosted games one, two, six, and seven if all were necessary). It also marked the Pistons 
+                            first NBA Finals loss to a team other than the Lakers since 1988. The Spurs won the series 
+                            four games to three in the first NBA Finals to go to a Game 7 since 1994."
+        }
     
 + Response 404 (application/json)
  
