@@ -8,7 +8,7 @@ class Team(models.Model) :
     Each Team has multiple TeamYear's (One-To-Many)
     """
     name = models.CharField(max_length=20, unique=True)
-    location = models.CharField(max_length=30, unique=True)
+    location = models.CharField(max_length=30)
     coach = models.CharField(max_length=30, unique=True)
     gm = models.CharField(max_length=30, unique=True)
     owner = models.CharField(max_length=30)
@@ -24,8 +24,6 @@ class Team(models.Model) :
                "coach: " + self.coach + "\n" \
                "gm: " + self.gm + "\n" \
                "owner: " + self.owner + "\n" \
-               "twitter: " + str(self.twitter) + "\n" \
-               "logo: " + str(self.logo) + "\n"
 
 class Player(models.Model) :
     """
@@ -47,8 +45,6 @@ class Player(models.Model) :
                "position: " + self.position + "\n" \
                "education: " + self.education + "\n" \
                "years of experience: " + self.years_exp + "\n" \
-               "twitter: " + str(self.twitter) + "\n" \
-               "photo: " + str(self.photo) + "\n"
 
 class Year(models.Model) :
     """
