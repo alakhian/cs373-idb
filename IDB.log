@@ -1,0 +1,330 @@
+commit 9327d0748ff9b04ab68d54d8064ccffbd6778886
+Author: Amar Lakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 10 19:08:30 2014 -0500
+
+    adding models.html file. finally working using help from piazza post
+
+commit 87d4ebb7ed338b7f78878d8d2327fecabe8c0f4c
+Author: Amar Lakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 10 18:49:59 2014 -0500
+
+    final report
+
+commit b5f949186ac46efedaedda9e9fc13b0d5b9edf75
+Author: Juan Reyes <jreyes57@utexas.edu>
+Date:   Thu Jul 10 18:08:47 2014 -0500
+
+    Transferring blueprint from apiary.io
+
+commit a2d80671fed98f0b6a6c6110362bdd8826c66df2
+Author: Juan Reyes <jreyes57@utexas.edu>
+Date:   Thu Jul 10 18:06:15 2014 -0500
+
+    changed miami heat logo so that it will not have the white border around it
+
+commit ddcd912a844e1be7f1ad273f1ad6041c1b8736f2
+Author: Amar Lakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 10 16:28:12 2014 -0500
+
+    revised copies of report in docx and pdf format
+
+commit 1d316a83987f73e95c0baac684232a6c1e5a2ce3
+Author: Amar Lakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 10 16:24:51 2014 -0500
+
+    revised copies of report in docx and pdf format
+
+commit ed5b9f0aa132829e14e55a49fff211cfa627181f
+Author: Amar Lakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 10 15:34:18 2014 -0500
+
+    added first draft of tech report
+
+commit 361d023e0091e5cf11fbab8964dcfdf976076a25
+Author: alakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 10 14:45:00 2014 -0500
+
+    fixed typos in get methods
+
+commit 8c4e3b3c9cfc4ce83b7fc5d2d9686d594f7914e7
+Author: Travis Carpenter <slifer220921@yahoo.com>
+Date:   Thu Jul 10 12:56:01 2014 -0500
+
+    data report page
+
+commit b6c4f2e48c39d3a51ef67f80e31fd51a50eb1835
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Thu Jul 10 11:26:43 2014 -0500
+
+    added 'pydoc' for models.py but it's not the correct output
+
+commit 7704558fb68fa5d599aa1144a9093d24c882c416
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Thu Jul 10 11:17:21 2014 -0500
+
+    Adding my portion of the report
+
+commit c7bac61fbefda72e693a5647c00ce519269f96b0
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Thu Jul 10 11:07:11 2014 -0500
+
+    added output from unit tests
+
+commit 0d064ee54086a90552168baa46b6d512e6ca9fa3
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Thu Jul 10 11:02:46 2014 -0500
+
+    added unit tests for each function and update to models.py Fixes #4
+
+commit 88c7e91b764278be093e8257e4f88cc8e8b54acc
+Author: alakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 10 10:54:55 2014 -0500
+
+    Final API for phase 1
+
+commit d31ec6c5b2cf0196fcf689a8086b9dd9d225f9f3
+Author: alakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 10 10:44:52 2014 -0500
+
+    changing get responses
+
+commit 54137c4914d70b653f1e08a2038311ef3f2b4e32
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Thu Jul 10 09:43:34 2014 -0500
+
+    changed the all_nba and all_def fields to strings because of issues with 'ManyToMany' field
+
+commit fd7fa9953d6b16bf86032848fd36894218d18e74
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Thu Jul 10 09:13:52 2014 -0500
+
+    Fixed a few errors from fields that needed 'related_name's
+
+commit 6730e8b7f9fa955ea9a8f3670e252d67357b208f
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Thu Jul 10 09:05:00 2014 -0500
+
+    Fixed syntax errors in the str methods
+
+commit 464a78466558efa03014312d8f290953e1edd24a
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Thu Jul 10 05:13:35 2014 -0500
+
+    Adding settings.py file used for our website so far
+
+commit ba66d0265a0222b4634d04ce0685700ba5945c7e
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Thu Jul 10 05:08:34 2014 -0500
+
+    Adding urls.py file used for our website
+
+commit 619e4f85f89255ad12fb6bca0f6e879c6c9dd2e7
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Thu Jul 10 05:07:05 2014 -0500
+
+    Adding admin.py file used for our website
+
+commit cb9747079379a345cefa006d8408ec95f070ce0f
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Thu Jul 10 05:05:19 2014 -0500
+
+    Adding views.py file used for our website
+
+commit 5b3868be045cab6078af2bf005e1e624b070cae3
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Thu Jul 10 05:02:04 2014 -0500
+
+    Adding all the html files written so far
+
+commit b1350088d8eb6f6fc4848cca3dada71978e280de
+Author: alakhian <amar.lakhian@utexas.edu>
+Date:   Wed Jul 9 18:33:49 2014 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 086ff61b56f9cffffb3e172f63c5a835c5dd988e
+Author: alakhian <amar.lakhian@utexas.edu>
+Date:   Wed Jul 9 18:11:44 2014 -0500
+
+    added data for teams by season and for whole nba seasons
+
+commit 1396e28db893255f28c97da6363b1418a6fd019e
+Author: alakhian <amar.lakhian@utexas.edu>
+Date:   Wed Jul 9 17:23:31 2014 -0500
+
+    Added data for accessing a Player's season
+
+commit e031a29d1f8507810e4aa708fb593d80896903da
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Wed Jul 9 16:59:50 2014 -0500
+
+    update
+
+commit df8c25ed7d6a1c5dd235674acacbef95836d40b6
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Wed Jul 9 16:55:34 2014 -0500
+
+    Cleaned up and added str methods for Team/Player
+
+commit c69a4b4fa68c07a4ece8ca153147a23c13a42aa1
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Wed Jul 9 16:18:54 2014 -0500
+
+    fixed a couple field types
+
+commit 77d2bd7e616f88a0dc5c057b07c487a8146e0708
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Wed Jul 9 16:16:21 2014 -0500
+
+    added PlayerYear and TeamYear as additional classes
+
+commit df5d0fa5d80858dea6f32533ab8ec89470f0297e
+Author: alakhian <amar.lakhian@utexas.edu>
+Date:   Wed Jul 9 14:48:51 2014 -0500
+
+    added more fields to Players and Teams
+
+commit 56200098da4790c44884bde1c4e33b3dde1561b5
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Wed Jul 9 12:50:02 2014 -0500
+
+    Some changes in teams.txt and years.txt
+
+commit 6bedd0fc6f7b9c021006d5fbd2d6ac6e4b27cb35
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Wed Jul 9 12:26:17 2014 -0500
+
+    update
+
+commit 827a0664fed40003725ebd1f6a25345424877608
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Tue Jul 8 19:37:47 2014 -0500
+
+    update to models.py
+
+commit 2e70ed4e10f1012a24bb39367cd6bdc5b264d4e4
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Tue Jul 8 19:17:03 2014 -0500
+
+    models.py update
+
+commit e3be38422155c15938caa5415e90e7921dce2d3e
+Author: Travis Carpenter <slifer220921@yahoo.com>
+Date:   Tue Jul 8 15:43:09 2014 -0500
+
+    playoof brackets, sorry for delay, been sick
+
+commit 1d878499470d07ae3d9456fa427c1a39da54c2e1
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Tue Jul 8 12:56:11 2014 -0500
+
+    Update models.py
+
+commit cf6175fdf9a934b4cc184ff12043b46c4b9d3f28
+Author: alakhian <amar.lakhian@utexas.edu>
+Date:   Tue Jul 8 12:20:39 2014 -0500
+
+    fixed some types
+
+commit 9a170b93b8bffd524342232002299d0f90ba58a7
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Tue Jul 8 12:06:51 2014 -0500
+
+    added years file with tentative information for years page
+
+commit 5c26ca5fcd36582b886e5954039fbbcddea073c5
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Tue Jul 8 11:51:01 2014 -0500
+
+    adding teams file with tentative information for teams page
+
+commit 7828430f2b4dedd450208c62164d7e596ad31d8a
+Author: alakhian <amar.lakhian@utexas.edu>
+Date:   Tue Jul 8 11:45:48 2014 -0500
+
+    Most basic API with 3 teams, players, seasons added
+
+commit 5515f5108ad07922e69bebb6bdd9d2180ac2eb14
+Merge: b822939 ae4ce81
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Tue Jul 8 11:44:41 2014 -0500
+
+    Merge branch 'master' of https://github.com/alakhian/cs373-idb
+
+commit b82293956652efe59467d4807c422037440ab1e9
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Tue Jul 8 11:44:14 2014 -0500
+
+    Added Steve Nash to players
+
+commit ae4ce81396f8bb33adab8dc7c77f0558629e65a7
+Author: alakhian <amar.lakhian@utexas.edu>
+Date:   Tue Jul 8 11:34:59 2014 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 11f39f4e7d43223ce88c7181c2766a3b503bbc17
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Tue Jul 8 11:29:31 2014 -0500
+
+    Added Kobe Bryant to players
+
+commit 4b81fff85648c41394ee2a0a2bd13cd6fd4f3c95
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Tue Jul 8 11:11:35 2014 -0500
+
+    Added Lebron to players
+
+commit 333141a54ca35dc503c93533389ac6a5b815a220
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Tue Jul 8 10:41:53 2014 -0500
+
+    added file for player information
+
+commit 07973eb0ff56948dccec0362553744efadde19ec
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Tue Jul 8 10:40:37 2014 -0500
+
+    Update models.py
+
+commit 1bd6c70f19e0fb72bfa3d1f5be7e9a97752ccb6f
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Mon Jul 7 13:30:10 2014 -0500
+
+    Update models.py
+
+commit 6f7080c114c88779557ab189448312051ee80246
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Mon Jul 7 13:29:18 2014 -0500
+
+    Update models.py
+
+commit 7218011ab1032713606767f94ea093d2997ff98d
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Mon Jul 7 13:14:11 2014 -0500
+
+    Added possible models.py file to add to
+
+commit bd5e9f6c7998a7aaf786c435f2213708fc66dc1b
+Author: Travis Carpenter <slifer220921@yahoo.com>
+Date:   Mon Jul 7 13:02:27 2014 -0500
+
+    nba Team Data
+
+commit 756073c7e0c895abc489464ae6bdc459ab39f932
+Author: alakhian <amar.lakhian@utexas.edu>
+Date:   Mon Jul 7 11:52:04 2014 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 5343d6a66ba77dee17e785f3c82e4dd69912d5a3
+Author: Amar Lakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 3 11:24:00 2014 -0500
+
+    template for website data
+
+commit 8b449ae90673fbf4eccf40b99c642bc423f2e0d9
+Author: alakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 3 10:12:48 2014 -0500
+
+    Initial commit
