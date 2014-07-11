@@ -1,3 +1,21 @@
+commit 668b812ee842970b043f25e214c9d3df8a2218cf
+Author: Amar Lakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 10 19:26:41 2014 -0500
+
+    updated models.py with meta classes
+
+commit 623cc3a80457c4b633cbbe2975c2284b3ae7dd83
+Author: Amar Lakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 10 19:16:58 2014 -0500
+
+    updated models.py with meta classes
+
+commit fc2bd24ac89801d31be6cfa829bcdbeffb95ea4a
+Author: Amar Lakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 10 19:13:59 2014 -0500
+
+    log of commits
+
 commit 9327d0748ff9b04ab68d54d8064ccffbd6778886
 Author: Amar Lakhian <amar.lakhian@utexas.edu>
 Date:   Thu Jul 10 19:08:30 2014 -0500
