@@ -79,10 +79,10 @@ class Year(models.Model) :
     Contains information about a certain Year
     """
     year = models.CharField(max_length=4, unique=True)
-    all_nba = models.ManyToManyField(Player, related_name='allnba')
-    all_def = models.ManyToManyField(Player, related_name='alldef')
-    finals_mvp = models.ForeignKey(Player, related_name='finalsmvp')
-    champion = models.ForeignKey(Team)
+    all_nba = models.CharField(max_length=500)
+    all_def = models.CharField(max_length=500)
+    finals_mvp = models.CharField(max_length=50)
+    champion = models.CharField(max_length=50)
     finals_logo = models.URLField(unique=True)
     finals_recap = models.TextField()
 
