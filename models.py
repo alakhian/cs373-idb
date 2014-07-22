@@ -35,7 +35,7 @@ class Team(models.Model) :
 class Player(models.Model) :
     """
     Contains information about a Player that is current and will not change
-    Each Player has multiple PlayerYear's (One-To-Many)
+    until the end of the next NBA season
     """
     name = models.CharField(max_length=30, unique=True)
     position = models.CharField(max_length=2)
@@ -43,6 +43,7 @@ class Player(models.Model) :
     years_exp = models.IntegerField(default=0)
     twitter = models.URLField(unique=True)
     photo = models.URLField(unique=True)
+
     #stats are career averages
     gp = models.IntegerField(default=0)
     gs = models.IntegerField(default=0)
@@ -76,12 +77,11 @@ class Player(models.Model) :
 class Year(models.Model) :
     """
     Contains information about a certain Year
-    Each Year has multiple PlayerYear's and TeamYear's (One-To-Many)
     """
     year = models.CharField(max_length=4, unique=True)
-    all_nba = models.ManyToManyField(Player)
-    all_def = models.ManyToManyField(Player)
-    finals_mvp = models.ForeignKey(Player)
+    all_nba = models.ManyToManyField(Player, related_name='allnba')
+    all_def = models.ManyToManyField(Player, related_name='alldef')
+    finals_mvp = models.ForeignKey(Player, related_name='finalsmvp')
     champion = models.ForeignKey(Team)
     finals_logo = models.URLField(unique=True)
     finals_recap = models.TextField()
