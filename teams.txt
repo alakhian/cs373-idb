@@ -34,4 +34,11 @@ GM		Mitch Kupchak
 owner		Jerry Buss Family Trust
 twitter		https://twitter.com/Lakers
 
+name		Phoenix Suns
+location	Phoenix, AZ
+logo		http://img3.wikia.nocookie.net/__cb20130726175325/logopedia/images/f/fe/Phoenix_Suns_2013_Logo.png
+coach		Jeff Hornacek
+GM		Ryan McDonough
+owner		Robert Sarver
+twitter		
 
