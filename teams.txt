@@ -40,5 +40,8 @@ logo		http://img3.wikia.nocookie.net/__cb20130726175325/logopedia/images/f/fe/Ph
 coach		Jeff Hornacek
 GM		Ryan McDonough
 owner		Robert Sarver
-twitter		
+twitter		https://twitter.com/Suns
+twitter_widget	491701650977849346
+
+
 
