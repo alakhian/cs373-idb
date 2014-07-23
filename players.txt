@@ -100,8 +100,6 @@ photo		http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/592.png
 twitter		https://twitter.com/SteveNash
 twitter_widget	491701650977849346
 
-Dwyane Wade, Tony Parker, Dirk Nowitzki, Paul Pierce, Derrick Rose, Kawhi Leonard, Kevin Durant
-
 
 name		Dwyane Wade
 position	SG
@@ -161,4 +159,118 @@ awards		MVP 2007
 photo		http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/609.png&w=350&h=254
 twitter		https://twitter.com/swish41
 twitter_widget	492005022876446720
+
+
+
+
+
+Name           : Kevin Durant
+position       : SF
+education      : University of Texas
+years_exp      : 7 years
+twitter        : 
+twitter_widget : 
+photo          : http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3202.png&w=350&h=254
+current team   : Oklahoma City Thunder
+gp             : 542
+gs             : 542
+minpg          : 38.2
+fgperc         : .479
+ftperc         : .882
+reb            : 6.9
+ast            : 3.5		
+blk            : 1.0
+stl            : 1.3
+pts            : 27.4
+finals years   : 
+finals teams   : 
+mvp years      : 2014
+finalsmvp years:
+allnba years   : 2010, 2011, 2012, 2013, 
+alldef years   :
+
+
+
+
+Name           : Kawhi Leonard
+position       : SF
+education      : San Diego State
+years_exp      : 3
+twitter        : 
+twitter_widget : 
+photo          : http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6450.png&w=350&h=254
+current team   : San Antonio Spurs
+gp             : 188
+gs             : 161
+minpg          : 28.0
+fgperc         : .505
+ftperc         : .803
+reb            : 5.8
+ast            : 1.6		
+blk            : 0.6
+stl            : 1.6
+pts            : 10.9
+finals years   : 2014
+finals teams   : San Antonio Spurs
+mvp years      : 
+finalsmvp years: 2014
+allnba years   : 
+alldef years   : 2014
+
+
+
+
+Name           : Derrick Rose
+position       : PG
+education      : Memphis
+years_exp      : 5
+twitter        : 
+twitter_widget : 
+photo          : http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3456.png&w=350&h=254
+current team   : Chicago Bulls
+gp             : 289
+gs             : 288
+minpg          : 36.6
+fgperc         : .460	
+ftperc         : .815	
+reb            : 3.8
+ast            : 6.8		
+blk            : 0.4
+stl            : 0.9
+pts            : 20.8
+finals years   :
+finals teams   : 
+mvp years      : 2011
+finalsmvp years:
+allnba years   : 2011
+alldef years   :
+
+
+
+
+Name           : Paul Pierce
+position       : SF
+education      : Kansas
+years_exp      : 16
+twitter        : 
+twitter_widget : 
+photo          : http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/662.png&w=350&h=254
+current team   : Washington Wizards
+gp             : 1177
+gs             : 1167
+minpg          : 36.1
+fgperc         : .447		
+ftperc         : .807		
+reb            : 5.9			
+ast            : 3.8		
+blk            : 0.6
+stl            : 1.4
+pts            : 21.3
+finals years   : 2008
+finals teams   : Boston Celtics
+mvp years      : 
+finalsmvp years: 2008
+allnba years   : 2002, 2003, 2008, 2009
+alldef years   :
+
 
