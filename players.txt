@@ -119,5 +119,46 @@ awards		MVP
 		All-Defensive 1st Team
 photo		http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1987.png&w=350&h=254
 twitter		https://twitter.com/DwyaneWade
-twitter_widget  492005022876446720
+twitter_widget  492011269524688896
+
+
+
+
+name		Tony Parker
+position	PG
+education	International
+years exp	13
+
+stats		gp	gs	min	fg%	ft%	reb	ast	blk	stl	pts
+		940	927	32.6	0.495	0.752	3.0	6.0	0.1	0.9	17.1
+
+finals_years	2005	2007	2013	2014	
+finals_teams	Spurs	Spurs	Spurs	Spurs
+awards		MVP
+		Finals MVP 2007
+		All-NBA 1st Team
+		All-Defensive 1st Team
+photo		http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1015.png&w=350&h=254
+twitter		https://twitter.com/tonyparker
+twitter_widget	492011547447685121
+
+
+
+name		Dirk Nowitzki
+position	PF
+education	International
+years_exp	16
+
+stats		gp	gs	min	fg%	ft%	reb	ast	blk	stl	pts
+		1188	1157	35.9	0.476	.879	8.1	2.6	0.9	0.9	22.5
+
+finals_years	2006	  2011
+finals_teams	Mavericks Mavericks
+awards		MVP 2007
+		Finals MVP 2011
+		All-NBA 1st Team 2005, 2006, 2007, 2009
+		All-Defensive 1st Team
+photo		http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/609.png&w=350&h=254
+twitter		https://twitter.com/swish41
+twitter_widget	492005022876446720
 
