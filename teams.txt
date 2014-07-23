@@ -43,5 +43,56 @@ owner		Robert Sarver
 twitter		https://twitter.com/Suns
 twitter_widget	491701650977849346
 
+name		Dallas Mavericks
+location	Dallas, TX
+logo		http://electricmaninc.com/wp-content/uploads/2011/03/dallas_mavericks_logo_yyq71.png
+coach		Rick Carlisle
+GM		Don Nelson
+owner		Mark Cuban
+twitter		https://twitter.com/dallasmavs
+twitter_widget	491469252390445056
 
+name		Boston Celtics
+location	Boston, MA
+logo		http://img4.wikia.nocookie.net/__cb20120119223258/nba2k/images/b/bf/Boston_Celtics_Logo.png
+coach		Brad Stevens
+GM		Danny Ainge
+owner		Boston Basketball Partners
+twitter		https://twitter.com/celtics
+twitter_widget	491469252390445056
 
+name 		Brooklyn Nets
+location	Brooklyn, NY
+logo		http://news.sportslogos.net/wp-content/uploads/2012/04/500x519xScreen-Shot-2012-04-30-at-07h47.15-1.png.pagespeed.ic.3y0LAHEYTf.jpg
+coach		Lionel Hollins
+GM		Billy King
+owner		Mikhail Prokhorov
+twitter		https://twitter.com/BrooklynNets
+twitter_widget	491469252390445056
+
+name		Cleveland Cavaliers
+location	Cleveland, OH
+logo		http://img4.wikia.nocookie.net/__cb20070605174502/halo/images/a/a3/Cleveland_Cavs_logo.png
+coach		David Blatt
+GM		David Griffin
+owner		Dan Gilbert
+twitter		https://twitter.com/cavs
+twitter_widget	491469252390445056
+
+name		Chicago Bulls
+location	Chicago, IL
+logo 		http://paonthefly.com/wp-content/uploads/2014/02/chicago-bulls-logo-png.png
+coach		Tom Thibodeau
+GM		Gar Forman
+owner		Jerry Reinsdorf
+twitter		https://twitter.com/chicagobulls
+twitter_widget	491469252390445056
+
+name		Oklahoma City Thunder
+location	Oklahoma City, OK
+logo		http://img2.wikia.nocookie.net/__cb20120119223616/nba2k/images/7/74/Oklahoma_City_Thunder_Logo.png
+coach		Scott Brooks
+GM		Sam Presti
+owner		Professional Basketball Club LLC
+twitter		https://twitter.com/okcthunder
+twitter_widget	491469252390445056
