@@ -96,6 +96,9 @@ awards		MVP 2006, 2005
 		Finals MVP 
 		All-NBA 1st Team 2007, 2006, 2005
 		All-Defensive 1st Team 
+photo		http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/592.png&w=350&h=254
+twitter		https://twitter.com/SteveNash
+twitter_widget	491701650977849346
 
 Dwyane Wade, Tony Parker, Dirk Nowitzki, Paul Pierce, Derrick Rose, Kawhi Leonard, Kevin Durant
 
