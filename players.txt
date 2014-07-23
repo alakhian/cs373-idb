@@ -102,3 +102,22 @@ twitter_widget	491701650977849346
 
 Dwyane Wade, Tony Parker, Dirk Nowitzki, Paul Pierce, Derrick Rose, Kawhi Leonard, Kevin Durant
 
+
+name		Dwayne Wade
+position	SG
+education	Marquette
+years exp	11
+
+stats		gp	gs	min	fg%	ft%	reb	ast	blk	stl	pts
+		719	710	36.6	.492	.765	5.0	6.0	1.0	1.8	24.3
+
+finals_years	2006	2011	2012	2013	2014	
+finals_teams	Heat	Heat	Heat	Heat	Heat
+awards		MVP
+		Finals MVP 2006
+		All-NBA 1st Team 2010, 2009
+		All-Defensive 1st Team
+photo		http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1987.png&w=350&h=254
+twitter		https://twitter.com/DwyaneWade
+twitter_widget  492005022876446720
+
