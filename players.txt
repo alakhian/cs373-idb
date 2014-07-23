@@ -103,7 +103,7 @@ twitter_widget	491701650977849346
 Dwyane Wade, Tony Parker, Dirk Nowitzki, Paul Pierce, Derrick Rose, Kawhi Leonard, Kevin Durant
 
 
-name		Dwayne Wade
+name		Dwyane Wade
 position	SG
 education	Marquette
 years exp	11
