@@ -168,8 +168,10 @@ Name           : Kevin Durant
 position       : SF
 education      : University of Texas
 years_exp      : 7 years
-twitter        : 
-twitter_widget : 
+twitter        : https://twitter.com/KDTrey5
+twitter_widget : 492014036490280960
+
+
 photo          : http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3202.png&w=350&h=254
 current team   : Oklahoma City Thunder
 gp             : 542
@@ -196,8 +198,10 @@ Name           : Kawhi Leonard
 position       : SF
 education      : San Diego State
 years_exp      : 3
-twitter        : 
-twitter_widget : 
+twitter        : https://twitter.com/kawhileonard
+twitter_widget : 492013898212462592
+
+
 photo          : http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6450.png&w=350&h=254
 current team   : San Antonio Spurs
 gp             : 188
@@ -224,8 +228,9 @@ Name           : Derrick Rose
 position       : PG
 education      : Memphis
 years_exp      : 5
-twitter        : 
-twitter_widget : 
+twitter        : https://twitter.com/drose
+twitter_widget : 492013592049242112
+
 photo          : http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3456.png&w=350&h=254
 current team   : Chicago Bulls
 gp             : 289
@@ -252,8 +257,9 @@ Name           : Paul Pierce
 position       : SF
 education      : Kansas
 years_exp      : 16
-twitter        : 
-twitter_widget : 
+twitter        : https://twitter.com/paulpierce34
+twitter_widget : 492013417947873280
+
 photo          : http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/662.png&w=350&h=254
 current team   : Washington Wizards
 gp             : 1177
