@@ -5,6 +5,7 @@ coach		Gregg Popovich
 GM		R. C. Buford
 owner		Peter Holt
 twitter		https://twitter.com/spurs
+twitter_widget	491472793976836097
 results by year
 		year	record	playoffs				MVP awards
 		2005	59-23	Won Championship vs Detroit 4-3		Tim Duncan, Finals MVP
@@ -25,6 +26,7 @@ coach		Erik Spoelstra
 GM		Pat Riley
 owner		Micky Arison
 twitter		https://twitter.com/MiamiHEAT
+twitter_widget	491472793976836097
 
 name		Lakers
 location	Los Angeles, CA
@@ -33,6 +35,7 @@ coach		vacant
 GM		Mitch Kupchak
 owner		Jerry Buss Family Trust
 twitter		https://twitter.com/Lakers
+twitter_widget	491476151773048832
 
 name		Phoenix Suns
 location	Phoenix, AZ
