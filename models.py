@@ -40,8 +40,6 @@ class Player(models.Model) :
     position = models.CharField(max_length=2)
     education = models.CharField(max_length=40)
     years_exp = models.IntegerField(default=0)
-    #stats by year with team played for, gp, gs, min, fg%, ft%, reb, ast, blk, stl, pts
-    #awards for MVP, Finals MVP, all-NBA 1st team, all-defensive 1st team
     twitter = models.URLField(unique=True)
     twitter_widget = models.CharField(max_length=500, default="")
     nickname = models.CharField(max_length=40, default="")
