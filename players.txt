@@ -22,7 +22,7 @@ awards		MVP 2003, 2002
 		All-Defensive 1st Team 2008, 2007, 2005, 2003, 2002, 2001, 2000, 1999
 photo		http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/215.png&w=350&h=254
 twitter		https://twitter.com/TimSlamDuncan
-
+twitter_widget	492366152106926082
 
 name		Lebron James
 position	SF
@@ -48,6 +48,7 @@ awards		MVP 2013, 2012, 2010, 2009
 		All-Defensive 1st Team 2013, 2012, 2011, 2010, 2009
 photo		http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254
 twitter		https://twitter.com/KingJames
+twitter_widget	492366292033089536
 
 name		Kobe Bryant
 position	SG
@@ -73,6 +74,7 @@ awards		MVP 2008
 		All-Defensive 1st Team 2011, 2010, 2009, 2008, 2007, 2006, 2004, 2003, 2000
 photo		http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/110.png&w=350&h=254
 twitter		https://twitter.com/kobebryant
+twitter_widget	492367374134153216
 
 name		Steve Nash
 position	PG
@@ -117,7 +119,7 @@ awards		MVP
 		All-Defensive 1st Team
 photo		http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1987.png&w=350&h=254
 twitter		https://twitter.com/DwyaneWade
-twitter_widget  492011269524688896
+twitter_widget  492366409570062336
 
 
 
@@ -138,7 +140,7 @@ awards		MVP
 		All-Defensive 1st Team
 photo		http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1015.png&w=350&h=254
 twitter		https://twitter.com/tonyparker
-twitter_widget	492011547447685121
+twitter_widget	492367764066017280
 
 
 
@@ -158,10 +160,7 @@ awards		MVP 2007
 		All-Defensive 1st Team
 photo		http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/609.png&w=350&h=254
 twitter		https://twitter.com/swish41
-twitter_widget	492005022876446720
-
-
-
+twitter_widget	492368227297525760
 
 
 Name           : Kevin Durant
@@ -169,7 +168,7 @@ position       : SF
 education      : University of Texas
 years_exp      : 7 years
 twitter        : https://twitter.com/KDTrey5
-twitter_widget : 492014036490280960
+twitter_widget : 492368476929941504
 
 
 photo          : http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3202.png&w=350&h=254
@@ -199,7 +198,7 @@ position       : SF
 education      : San Diego State
 years_exp      : 3
 twitter        : https://twitter.com/kawhileonard
-twitter_widget : 492013898212462592
+twitter_widget : 492368668357951488
 
 
 photo          : http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6450.png&w=350&h=254
@@ -229,7 +228,7 @@ position       : PG
 education      : Memphis
 years_exp      : 5
 twitter        : https://twitter.com/drose
-twitter_widget : 492013592049242112
+twitter_widget : 492368838441181184
 
 photo          : http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3456.png&w=350&h=254
 current team   : Chicago Bulls
@@ -258,7 +257,7 @@ position       : SF
 education      : Kansas
 years_exp      : 16
 twitter        : https://twitter.com/paulpierce34
-twitter_widget : 492013417947873280
+twitter_widget : 492368968967917568
 
 photo          : http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/662.png&w=350&h=254
 current team   : Washington Wizards
