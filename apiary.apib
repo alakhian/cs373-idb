@@ -1,5 +1,5 @@
 FORMAT: 1A
-HOST: http://nbaidb.pythonanywhere.com/
+HOST: http://nbaidb.pythonanywhere.com
 
 # 373-nba
 373-nba is an API for NBA IDB
@@ -7,46 +7,115 @@ HOST: http://nbaidb.pythonanywhere.com/
 # Group Team
 Data pertaining to NBA Teams
 
-## Teams Collection [/teams]
+## Teams Collection [/api/teams]
 ### List all Teams [GET]
-+ Response 200 (application/hal+json)
++ Response 200 (application/json)
 
         [
             {
-                "id": 0,
+                "id": 1,
                 "name": "Spurs",
-                "location": "San Antonio",
+                "location": "San Antonio, TX",
                 "coach": "Gregg Popovich",
-                "gm": "R.C. Buford",
+                "gm": "R. C. Buford",
                 "owner": "Peter Holt",
-                "twitter": <https://twitter.com/spurs>,
-                "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/a/a2/San_Antonio_Spurs.svg/200px-San_Antonio_Spurs.svg.png>
+                "twitter": "https://twitter.com/spurs",
+                "logo": "http://www.sports-logos-screensavers.com/user/San_Antonio_Spurs2.jpg"
             },
             {
                 "id": 2,
                 "name": "Heat",
-                "location": "Miami",
+                "location": "Miami, FL",
                 "coach": "Erik Spoelstra",
                 "gm": "Pat Riley",
                 "owner": "Micky Arison",
-                "twitter": <https://twitter.com/MiamiHEAT>,
-                "logo": <http://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg>
+                "twitter": "https://twitter.com/MiamiHEAT",
+                "logo": "http://blog.yellowdoggdesigns.com/wp-content/uploads/2013/06/miami-heat-logo.jpg"
             },
             {
-                "id": 2,
+                "id": 3,
                 "name": "Lakers",
-                "location: "Los Angeles",
-                "coach": "",
+                "location": "Los Angeles, CA",
+                "coach": "vacant",
                 "gm": "Mitch Kupchak",
                 "owner": "Jerry Buss Family Trust",
-                "twitter": <https://twitter.com/Lakers>,
-                "logo": <http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/LosAngeles_Lakers_logo.svg/200px-LosAngeles_Lakers_logo.svg.png>
+                "twitter": "https://twitter.com/Lakers",
+                "logo": "http://upload.wikimedia.org/wikipedia/en/9/9a/Los_Angeles_Lakers_logo.png"
             },
-            
+            {
+                "id": 4,
+                "name": "Suns",
+                "location": "Phoenix, AZ",
+                "coach": "Jeff Hornacek",
+                "gm": "Ryan McDonough",
+                "owner": "Robert Sarver",
+                "twitter": "https://twitter.com/Suns",
+                "logo": "http://img3.wikia.nocookie.net/__cb20130726175325/logopedia/images/f/fe/Phoenix_Suns_2013_Logo.png"
+            },
+            {
+                "id": 5,
+                "name": "Mavericks",
+                "location": "Dallas, TX",
+                "coach": "Rick Carlisle",
+                "gm": "Don Nelson",
+                "owner": "Mark Cuban",
+                "twitter": "https://twitter.com/dallasmavs",
+                "logo": "http://electricmaninc.com/wp-content/uploads/2011/03/dallas_mavericks_logo_yyq71.png"
+            },
+            {
+                "id": 6,
+                "name": "Celtics",
+                "location": "Boston, MA",
+                "coach": "Brad Stevens",
+                "gm": "Danny Ainge",
+                "owner": "Boston Basketball Partners",
+                "twitter": "https://twitter.com/celtics",
+                "logo": "http://img4.wikia.nocookie.net/__cb20120119223258/nba2k/images/b/bf/Boston_Celtics_Logo.png"
+            },
+            {
+                "id": 7,
+                "name": "Wizards",
+                "location": "Washington, D.C.",
+                "coach": "Randy Wittman",
+                "gm": "Ernie Grunfeld",
+                "owner": "Ted Leonsis",
+                "twitter": "https://twitter.com/WashWizards",
+                "logo": "http://tiger.towson.edu/~mpiazz2/Wizards/Washington_Wizards4.png"
+            },
+            {
+                "id": 8,
+                "name": "Cavaliers",
+                "location": "Cleveland, OH",
+                "coach": "David Blatt",
+                "gm": "David Griffin",
+                "owner": "Dan Gilbert",
+                "twitter": "https://twitter.com/cavs",
+                "logo": "http://img4.wikia.nocookie.net/__cb20070605174502/halo/images/a/a3/Cleveland_Cavs_logo.png"
+            },
+            {
+                "id": 9,
+                "name": "Bulls",
+                "location": "Chicago, IL",
+                "coach": "Tom Thibodeau",
+                "gm": "Gar Forman",
+                "owner": "Jerry Reinsdorf",
+                "twitter": "https://twitter.com/chicagobulls",
+                "logo": "http://www.blainebpa.org/WebsiteSTATE/images/Chicago-Bulls-Logo.png"
+            },
+            {
+                "id": 10,
+                "name": "Thunder",
+                "location": "Oklahoma City, OK",
+                "coach": "Scott Brooks",
+                "gm": "Sam Presti",
+                "owner": "Professional Basketball Club LLC",
+                "twitter": "https://twitter.com/okcthunder",
+                "logo": "http://img2.wikia.nocookie.net/__cb20120119223616/nba2k/images/7/74/Oklahoma_City_Thunder_Logo.png"
+            }
         ]
 
 
-## Team [/teams/{id}]
+## Team [/api/teams/{id}]
 A single Team object with all its details
 
 + Parameters
@@ -58,174 +127,178 @@ A single Team object with all its details
 + Response 200 (application/json)
  
         {
-            "id": 0,
-            "name": "Heat",
-            "location": "Miami",
-            "coach": "Erik Spoelstra",
-            "gm": "Pat Riley",
-            "owner": "Micky Arison",
-            "twitter": <https://twitter.com/MiamiHEAT>,
-            "logo": <http://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg>
-        }
+            "id": 1,
+            "name": "Spurs",
+            "location": "San Antonio, TX",
+            "coach": "Gregg Popovich",
+            "gm": "R. C. Buford",
+            "owner": "Peter Holt",
+            "twitter": "https://twitter.com/spurs",
+            "logo": "http://www.sports-logos-screensavers.com/user/San_Antonio_Spurs2.jpg"
+        }  
     
 + Response 404 (application/json)
- 
-        { 
-            "error": "Resource not found" 
-        }
-
-## Team Season [/teams/{id}/seasons]
-### List all Team Seasons [GET]
-+ Response 200 (application/hal+json)
-
-        [
-            {
-                "id": 0,
-                "team": "Spurs",
-                "year": 2005,
-                "wins": 59,
-                "losses": 23,
-                "playoffrecap": "Won Championship vs Detroit 4-3"
-            },
-            {
-                "id": 1,
-                "team": "Spurs",
-                "year": 2006,
-                "wins": 63,
-                "losses": 19,
-                "playoffrecap": "Lost Conference Semis vs Dallas 3-4"
-            },
-            {
-                "id": 2,
-                "team": "Spurs",
-                "year": 2007,
-                "wins": 58,
-                "losses": 24,
-                "playoffrecap": "Won Championship vs Cleveland 4-0"
-            },
-            {
-                "id": 3,
-                "team": "Spurs",
-                "year": 2008,
-                "wins": 56,
-                "losses": 26,
-                "playoffrecap": "Lost Conference Finals vs L.A.L. 1-4"
-            },
-            {
-                "id": 4,
-                "team": "Spurs",
-                "year": 2009,
-                "wins": 54,
-                "losses": 28,
-                "playoffrecap": "Lost first Round vs. Dallas 1-4"
-            },
-            {
-                "id": 5,
-                "team": "Spurs",
-                "year": 2010,
-                "wins": 50,
-                "losses": 32,
-                "playoffrecap": "Lost Conference Semis vs. Phoenix 0-4"
-            },
-            {
-                "id": 6,
-                "team": "Spurs",
-                "year": 2011,
-                "wins": 61,
-                "losses": 21,
-                "playoffrecap": "Lost first Round vs Memphis 2-4"
-            },
-            {
-                "id": 7,
-                "team": "Spurs",
-                "year": 2012,
-                "wins": 50,
-                "losses": 16,
-                "playoffrecap": "Lost Conference Finals vs. OKC 2-4"
-            },
-            {
-                "id": 8,
-                "team": "Spurs",
-                "year": 2013,
-                "wins": 58,
-                "losses": 24,
-                "playoffrecap": "Lost NBA Finals vs. Miami 3-4"
-            },
-            {
-                "id": 9,
-                "team": "Spurs",
-                "year": 2014,
-                "wins": 62,
-                "losses": 20,
-                "playoffrecap": "Won NBA Finals vs. Miami 4-1"
-            }
-        ]
-
-## Team Season [/teams/{id}/seasons/{id}]
-A single Team Season object with all its details
-
-+ Parameters
-    + id (required, int) ... Unique season ID in the form of an integer
-
-### Retrieve a single Team Season. [GET]
- 
-+ Response 200 (application/json)
  
         {
-            "id": 0,
-            "team": "Spurs",
-            "year": 2005,
-            "wins": 59,
-            "losses": 23,
-            "playoffrecap": "Won Championship vs Detroit 4-3"
-        }
-    
-+ Response 404 (application/json)
- 
-        { 
-            "error": "Resource not found" 
+            "detail": "Not found"
         }
 
 
 # Group Player 
 Data pertaining to NBA Players
 
-## Players Collection [/players]
+## Players Collection [/api/players]
 ### List all Players [GET]
-+ Response 200 (application/hal+json)
++ Response 200 (application/json)
 
         [
-            {
-                "id": 0,
-                "name": "Kobe Bryant",
-                "position": "SG",
-                "education": "Lower Merion High School",
-                "years_exp": 18,
-                "twitter" = <https://twitter.com/kobebryant>,
-                "photo" = <http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/110.png&w=350&h=254>
-            },
             {
                 "id": 1,
                 "name": "Tim Duncan",
                 "position": "PF",
                 "education": "Wake Forest",
                 "years_exp": 17,
-                "twitter" = <https://twitter.com/TimSlamDuncan>,
-                "photo" = <http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/215.png&w=350&h=254>
+                "twitter": "https://twitter.com/TimSlamDuncan",
+                "twitter_widget": "492366152106926082",
+                "nickname": "\"The Big Fundamental\"",
+                "photo": "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/215.png&w=350&h=254",
+                "highlights": "https://www.youtube.com/embed/3uTCIPiuG5A",
+                "current_team": "Spurs"
             },
             {
                 "id": 2,
                 "name": "Lebron James",
-                "position": "SF",
+                "position": "PF",
                 "education": "St. Vincent-St. Mary High School",
                 "years_exp": 11,
-                "twitter" = <https://twitter.com/KingJames>,
-                "photo" = <http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254>
+                "twitter": "https://twitter.com/KingJames",
+                "twitter_widget": "492366292033089536",
+                "nickname": "\"King James\"",
+                "photo": "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png&w=350&h=254",
+                "highlights": "https://www.youtube.com/embed/6CgqhHva56w",
+                "current_team": "Cavaliers"
+            },
+            {
+                "id": 3,
+                "name": "Kobe Bryant",
+                "position": "SG",
+                "education": "Lower Merion High School",
+                "years_exp": 18,
+                "twitter": "https://twitter.com/kobebryant",
+                "twitter_widget": "492367374134153216",
+                "nickname": "\"Black Mamba\"",
+                "photo": "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/110.png&w=350&h=254",
+                "highlights": "https://www.youtube.com/embed/hZFtrsoFCDI",
+                "current_team": "Lakers"
+            },
+            {
+                "id": 4,
+                "name": "Steve Nash",
+                "position": "PG",
+                "education": "Santa Clara",
+                "years_exp": 18,
+                "twitter": "https://twitter.com/SteveNash",
+                "twitter_widget": "491701650977849346",
+                "nickname": "\"Captain Canada\"",
+                "photo": "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/592.png&w=350&h=254",
+                "highlights": "https://www.youtube.com/embed/9Wp49pG3-g0",
+                "current_team": "Lakers"
+            },
+            {
+                "id": 5,
+                "name": "Dwyane Wade",
+                "position": "SG",
+                "education": "Marquette",
+                "years_exp": 11,
+                "twitter": "https://twitter.com/DwyaneWade",
+                "twitter_widget": "492366409570062336",
+                "nickname": "\"Flash\"",
+                "photo": "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1987.png&w=350&h=254",
+                "highlights": "https://www.youtube.com/embed/pPVzvf3nPxQ",
+                "current_team": "Heat"
+            },
+            {
+                "id": 6,
+                "name": "Tony Parker",
+                "position": "PG",
+                "education": "International",
+                "years_exp": 13,
+                "twitter": "https://twitter.com/tonyparker",
+                "twitter_widget": "492367764066017280",
+                "nickname": "\"TP\"",
+                "photo": "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1015.png&w=350&h=254",
+                "highlights": "https://www.youtube.com/embed/vbBawRDWuks",
+                "current_team": "Spurs"
+            },
+            {
+                "id": 7,
+                "name": "Dirk Nowitzki",
+                "position": "PF",
+                "education": "International",
+                "years_exp": 16,
+                "twitter": "https://twitter.com/swish41",
+                "twitter_widget": "492368227297525760",
+                "nickname": "\"Dirk\"",
+                "photo": "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/609.png&w=350&h=254",
+                "highlights": "https://www.youtube.com/embed/TcgQmdefWw0",
+                "current_team": "Mavericks"
+            },
+            {
+                "id": 8,
+                "name": "Kevin Durant",
+                "position": "SF",
+                "education": "Texas",
+                "years_exp": 7,
+                "twitter": "https://twitter.com/KDTrey5",
+                "twitter_widget": "492368476929941504",
+                "nickname": "\"KD\"",
+                "photo": "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3202.png&w=350&h=254",
+                "highlights": "https://www.youtube.com/embed/GIFiWKFSsh0",
+                "current_team": "Thunder"
+            },
+            {
+                "id": 9,
+                "name": "Kawhi Leonard",
+                "position": "SF",
+                "education": "San Diego State",
+                "years_exp": 3,
+                "twitter": "https://twitter.com/kawhileonard",
+                "twitter_widget": "492368668357951488",
+                "nickname": "\"The Future\"",
+                "photo": "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/6450.png&w=350&h=254",
+                "highlights": "https://www.youtube.com/embed/Gptiz36HLlQ",
+                "current_team": "Spurs"
+            },
+            {
+                "id": 10,
+                "name": "Derrick Rose",
+                "position": "PG",
+                "education": "Memphis",
+                "years_exp": 5,
+                "twitter": "https://twitter.com/drose",
+                "twitter_widget": "492368838441181184",
+                "nickname": "\"D-Rose\"",
+                "photo": "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3456.png&w=350&h=254",
+                "highlights": "https://www.youtube.com/embed/Plt4b2RHT48",
+                "current_team": "Bulls"
+            },
+            {
+                "id": 11,
+                "name": "Paul Pierce",
+                "position": "SF",
+                "education": "Kansas",
+                "years_exp": 16,
+                "twitter": "https://twitter.com/paulpierce34",
+                "twitter_widget": "492368968967917568",
+                "nickname": "\"The Truth\"",
+                "photo": "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/662.png&w=350&h=254",
+                "highlights": "https://www.youtube.com/embed/TOZELH5TTog",
+                "current_team": "Wizards"
             }
         ]
 
 
-## Player [/players/{id}]
+## Player [/api/players/{id}]
 A single Player object with all its details
 
 + Parameters
@@ -235,359 +308,157 @@ A single Player object with all its details
 ### Retrieve a single Player [GET]
  
 + Response 200 (application/json)
- 
     
         {
-            "id": 0,
+            "id": 3,
             "name": "Kobe Bryant",
             "position": "SG",
             "education": "Lower Merion High School",
             "years_exp": 18,
-            "twitter" = <https://twitter.com/kobebryant>,
-            "photo" = <http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/110.png&w=350&h=254>
+            "twitter": "https://twitter.com/kobebryant",
+            "twitter_widget": "492367374134153216",
+            "nickname": "\"Black Mamba\"",
+            "photo": "http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/110.png&w=350&h=254",
+            "highlights": "https://www.youtube.com/embed/hZFtrsoFCDI",
+            "current_team": "Lakers"
         }
     
 + Response 404 (application/json)
- 
-        { 
-            "error": "Resource not found" 
-        }
-
-## Player Season [/players/{id}/seasons]
-### List all Player Seasons [GET]
-+ Response 200 (application/hal+json) 
-
-        [
-            {
-                "id": 0,
-                "year": 2005,
-                "team": "Lakers",
-                "gp": 66,
-                "gs": 66,
-                "min": 40.7,
-                "fg_perc": 0.433,
-                "ft_perc": 0.816,
-                "reb": 5.9,
-                "ast": 6.0,
-                "blk": 0.8,
-                "stl": 1.3,
-                "pts": 27.6,
-                "mvp": "False", 
-                "finals_mvp": "False",
-                "all_nba": "False",
-                "all_def": "False"
-            },
-            {
-                "id": 1,
-                "year": 2006,
-                "team": "Lakers",
-                "gp": 80,
-                "gs": 80,
-                "min": 41.0,
-                "fg_perc": 0.450,
-                "ft_perc": 0.850,
-                "reb": 5.3,
-                "ast": 4.5,
-                "blk": 0.4,
-                "stl": 1.8,
-                "pts": 35.4,
-                "mvp": "False", 
-                "finals_mvp": "False", 
-                "all_nba": "True",
-                "all_def": "True"
-            },
-            {
-                "id": 2,
-                "year": 2007,
-                "team": "Lakers",
-                "gp": 77,
-                "gs": 77,
-                "min": 40.8,
-                "fg_perc": 0.463,
-                "ft_perc": 0.868,
-                "reb": 5.7,
-                "ast": 5.4,
-                "blk": 0.5,
-                "stl": 1.4,
-                "pts": 31.6,
-                "mvp": "False", 
-                "finals_mvp": "False", 
-                "all_nba": "True",
-                "all_def": "True"
-            },
-            {
-                "id": 3,
-                "year": 2008,
-                "team": "Lakers",
-                "gp": 82,
-                "gs": 82,
-                "min": 38.9,
-                "fg_perc": 0.459,
-                "ft_perc": 0.840,
-                "reb": 6.3,
-                "ast": 5.4,
-                "blk": 0.5,
-                "stl": 1.8,
-                "pts": 28.3,
-                "mvp": "True", 
-                "finals_mvp": "False", 
-                "all_nba": "True",
-                "all_def": "True"
-            },
-            {
-                "id": 4,
-                "year": 2009,
-                "team": "Lakers",
-                "gp": 82,
-                "gs": 82,
-                "min": 36.1,
-                "fg_perc": 0.467,
-                "ft_perc": 0.856,
-                "reb": 5.2,
-                "ast": 4.9,
-                "blk": 0.5,
-                "stl": 1.5,
-                "pts": 26.8,
-                "mvp": "False", 
-                "finals_mvp": "True", 
-                "all_nba": "True",
-                "all_def": "True"
-            },
-            {
-                "id": 5,
-                "year": 2010,
-                "team": "Lakers",
-                "gp": 73,
-                "gs": 73,
-                "min": 38.8,
-                "fg_perc": 0.456,
-                "ft_perc": 0.811,
-                "reb": 5.4,
-                "ast": 5.0,
-                "blk": 0.3,
-                "stl": 1.5,
-                "pts": 27.0,
-                "mvp": "False", 
-                "finals_mvp": "True", 
-                "all_nba": "True",
-                "all_def": "True"
-            },
-            {
-                "id": 6,
-                "year": 2011,
-                "team": "Lakers",
-                "gp": 82,
-                "gs": 82,
-                "min": 33.9,
-                "fg_perc": 0.451,
-                "ft_perc": 0.828,
-                "reb": 5.1,
-                "ast": 4.7,
-                "blk": 0.1,
-                "stl": 1.2,
-                "pts": 25.3,
-                "mvp": "False",
-                "finals_mvp": "False",
-                "all_nba": "True",
-                "all_def": "True"
-            },
-            {
-                "id": 7,
-                "year": 2012,
-                "team": "Lakers",
-                "gp": 58,
-                "gs": 58,
-                "min": 38.5,
-                "fg_perc": 0.430,
-                "ft_perc": 0.845,
-                "reb": 5.4,
-                "ast": 4.6,
-                "blk": 0.3,
-                "stl": 1.2,
-                "pts": 27.9,
-                "mvp": "False",
-                "finals_mvp": "False",
-                "all_nba": "True",
-                "all_def": "False"
-            },
-            {
-                "id": 8,
-                "year": 2013,
-                "team": "Lakers",
-                "gp": 78,
-                "gs": 78,
-                "min": 38.6,
-                "fg_perc": 0.463,
-                "ft_perc": 0.839,
-                "reb": 5.6,
-                "ast": 6.0,
-                "blk": 0.3,
-                "stl": 1.4,
-                "pts": 27.3,
-                "mvp": "False",
-                "finals_mvp": "False",
-                "all_nba": "True",
-                "all_def": "False"
-            },
-            {
-                "id": 9,
-                "year": 2014,
-                "team": "Lakers",
-                "gp": 6,
-                "gs": 6,
-                "min": 29.5,
-                "fg_perc": 0.425,
-                "ft_perc": 0.857,
-                "reb": 4.3,
-                "ast": 6.3,
-                "blk": 0.2,
-                "stl": 1.2,
-                "pts": 13.8,
-                "mvp": "False",
-                "finals_mvp": "False",
-                "all_nba": "False",
-                "all_def": "False"
-            }
-        ]
-        
-## Player Season [/players/{id}/seasons/{id}]
-A single Player Season object with all its details
-
-+ Parameters
-    + id (required, int) ... Unique season ID in the form of an integer
-
-### Retrieve a single Player Season. [GET]
- 
-+ Response 200 (application/json)
  
         {
-            "id": 0,
-            "year": 2005,
-            "team": "Lakers",
-            "gp": 66,
-            "gs": 66,
-            "min": 40.7,
-            "fg_perc": 0.433,
-            "ft_perc": 0.816,
-            "reb": 5.9,
-            "ast": 6.0,
-            "blk": 0.8,
-            "stl": 1.3,
-            "pts": 27.6,
-            "mvp": "False", 
-            "finals_mvp": "False",
-            "all_nba": "False",
-            "all_def": "False"
+            "detail": "Not found"
         }
-    
-+ Response 404 (application/json)
- 
-        { 
-            "error": "Resource not found" 
-        }
+
 
 # Group Season
 Data pertaining to NBA Seasons
 
-## Seasons Collection [/seasons]
+## Seasons Collection [/api/years]
 ### List all Seasons [GET]
-+ Response 200 (application/hal+json)
++ Response 200 (application/json)
 
         [
             {
-                "id": 0,
-                "year": 2005,
-                "all_nba": 
-                    {
-                        "Tim Duncan", 
-                        "Allen Iverson", 
-                        "Steve Nash", 
-                        "Dirk Nowitzki", 
-                        "Shaquille O'Neal"
-                    },
-                "all_def":
-                    {
-                        "Bruce Bowen", 
-                        "Tim Duncan", 
-                        "Kevin Garnett", 
-                        "Larry Hughes", 
-                        "Ben Wallace"
-                    },
-                "finals_mvp": "Tim Duncan",
-                "champion": "Spurs",
-                "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/6/65/NBA_Finals_05.png/200px-NBA_Finals_05.png>,
-                "finals_recap": "The 2005 NBA Finals was the championship round of the 2004-05 
-                                National Basketball Association season. The San Antonio Spurs of the Western Conference 
-                                faced the Detroit Pistons of the Eastern Conference for the title, with the Spurs holding 
-                                home court advantage and the Pistons as defending champions. The series was played under a 
-                                best-of-seven format. (Unlike the previous three rounds, the team with home court advantage 
-                                hosted games one, two, six, and seven if all were necessary). It also marked the Pistons 
-                                first NBA Finals loss to a team other than the Lakers since 1988. The Spurs won the series 
-                                four games to three in the first NBA Finals to go to a Game 7 since 1994."
+                "id": 1,
+                "year": "2005",
+                "finals_logo": "http://upload.wikimedia.org/wikipedia/en/thumb/6/65/NBA_Finals_05.png/200px-NBA_Finals_05.png",
+                "finals_recap": "The 2005 NBA Finals was the championship round of the 2004-05 National Basketball Association 
+                season. The San Antonio Spurs of the Western Conference faced the Detroit Pistons of the Eastern Conference for
+                the title, with the Spurs holding home court advantage and the Pistons as defending champions. The series was
+                played under a best-of-seven format. (Unlike the previous three rounds, the team with home court advantage
+                hosted games one, two, six, and seven if all were necessary). It also marked the Pistons first NBA Finals loss
+                to a team other than the Lakers since 1988.\r\nThe Spurs won the series four games to three in the first NBA
+                Finals to go to a Game 7 since 1994. The games were broadcast on ABC, with Al Michaels and Hubie Brown
+                commentating. National radio coverage was provided by ESPN Radio through announcers Jim Durham and Dr. Jack
+                Ramsay.",
+                "highlights": "https://www.youtube.com/embed/BxIa4XrHh4Q"
             },
             {
-                "id": 1,
-                "year": 2006,
-                "all_nba": 
-                    {
-                        "LeBron James",
-                        "Dirk Nowitzki",
-                        "Shaquille O'Neal",
-                        "Kobe Bryant",
-                        "Steve Nash"
-                    },
-                "all_def":
-                    {
-                        "Ron Artest",
-                        "Bruce Bowen",
-                        "Andrei Kirilenko",
-                        "Ben Wallace",
-                        "Kobe Bryant (tie)",
-                        "Jason Kidd (tie)"
-                    },
-                "finals_mvp": "Dwyane Wade",
-                "champion": "Heat",
-                "logo": <http://teampins.com/nbafinalslog1.jpg>,
-                "finals_recap": "The 2006 NBA Finals was the championship series of the 2005–06 National Basketball 
-                                Association season. The Miami Heat won the title in six games over the Dallas 
-                                Mavericks, becoming the third team—after the 1969 Celtics and the 1977 Trail Blazers—to 
-                                win a championship after trailing 0–2 in the series. Heat guard Dwyane Wade was named 
-                                Most Valuable Player of the series."
-            }
-            {
                 "id": 2,
-                "year": 2007,
-                "all_nba": 
-                    {
-                        "Tim Duncan",
-                        "Dirk Nowitzki",
-                        "Amare Stoudemire",
-                        "Kobe Bryant",
-                        "Steve Nash"
-                    },
-                "all_def":
-                    {
-                        "Kobe Bryant",
-                        "Bruce Bowen",
-                        "Marcus Camby",
-                        "Tim Duncan",
-                        "Raja Bell"
-                    },
-                "finals_mvp": "Tony Parker",
-                "champion": "Spurs",
-                "logo": <http://upload.wikimedia.org/wikipedia/en/7/79/2007_NBA_Finals.png>,
-                "finals_recap": "The 2007 NBA Finals was the championship series of the 2006–07 National 
-                                Basketball Association season, and was the conclusion of the 2007 NBA 
-                                Playoffs. The best-of-seven series was played between the Western Conference 
-                                champion San Antonio Spurs and the Eastern Conference champion Cleveland 
-                                Cavaliers. This was Cleveland's first trip to the NBA Finals in their 
-                                franchise history and San Antonio's fourth. The Spurs swept the Cavaliers 
-                                4-0. Tony Parker was named the series' MVP."
+                "year": "2006",
+                "finals_logo": "http://michaelaltschuler.files.wordpress.com/2011/05/versus-dallas-mavericks-vs-miami-heat.jpg",
+                "finals_recap": "The 2006 NBA Finals was the championship series of the 2005\u201306 National Basketball Association
+                season. The Miami Heat won the title in six games over the Dallas Mavericks, becoming the third team\u2014after the
+                1969 Celtics and the 1977 Trail Blazers\u2014to win a championship after trailing 0\u20132 in the series. Heat guard
+                Dwyane Wade was named Most Valuable Player of the series.\r\n",
+                "highlights": "https://www.youtube.com/embed/VOZY99zZ-o8"
+            },
+            {
+                "id": 3,
+                "year": "2007",
+                "finals_logo": "http://upload.wikimedia.org/wikipedia/en/7/79/2007_NBA_Finals.png",
+                "finals_recap": "The 2007 NBA Finals was the championship series of the 2006\u201307 National Basketball Association
+                season, and was the conclusion of the 2007 NBA Playoffs. The best-of-seven series was played between the Western
+                Conference champion San Antonio Spurs and the Eastern Conference champion Cleveland Cavaliers. This was Cleveland's
+                first trip to the NBA Finals in their franchise history and San Antonio's fourth. The Spurs swept the Cavaliers 4-0.
+                Tony Parker was named the series' MVP. The series was televised on ABC under the ESPN on ABC branding, and produced
+                low television ratings.\r\n",
+                "highlights": "https://www.youtube.com/embed/9aF6RJCfqf4"
+            },
+            {
+                "id": 4,
+                "year": "2008",
+                "finals_logo": "http://content.sportslogos.net/logos/6/981/full/gc0ehbgvuonjd0jgj148lgg47.gif",
+                "finals_recap": "The 2008 NBA Finals were held June 5 through June 17 of 2008, to decide the winner of the 2007\u201308
+                NBA season, and conclude the season's playoffs. The Boston Celtics, top-seeded champions of the Eastern Conference,
+                defeated the Los Angeles Lakers, top-seeded champions of the Western Conference, four games to two in a best-of-seven
+                series. This was Boston's first title since 1986 and 17th overall.\r\n2008 marked the first time since 2000 that the top
+                seeds from both conferences met in the Finals and the first time since 2003 that any top seeded team played in the NBA
+                finals. The Lakers appeared in the Finals for the first time since 2004 and a record 29th time overall. The Celtics appeared
+                in the Finals for the first time since 1987 and second-best 20th time overall.\r\n",
+                "highlights": "https://www.youtube.com/embed/qzcayb9KEis"
+            },
+            {
+                "id": 5,
+                "year": "2009",
+                "finals_logo": "http://content.sportslogos.net/logos/6/981/full/5rxl4j98r10cevf7eyz5dryqn.gif",
+                "finals_recap": "The 2009 NBA Finals was the National Basketball Association (NBA) championship series for the 2008-09
+                season. The best-of-seven playoff was contested between the Los Angeles Lakers, champions of the Western Conference and
+                defending Western Conference champions, and the Orlando Magic, champions of the Eastern Conference. The Lakers defeated
+                the Magic, four games to one, to win the franchise's 15th NBA championship. The 63rd edition of the championship series
+                was played between June 4 and June 14 and was broadcast on ABC.\r\n",
+                "highlights": "https://www.youtube.com/embed/gpRmbhPg98o"
+            },
+            {
+                "id": 6,
+                "year": "2010",
+                "finals_logo": "http://upload.wikimedia.org/wikipedia/en/6/6a/2010_NBA_Finals.png",
+                "finals_recap": "The 2010 NBA Finals was the National Basketball Association (NBA) championship series for the 2009\u201310
+                season. The best-of-seven playoff was contested between the Los Angeles Lakers, champions of the Western Conference and
+                defending NBA champions, and the Boston Celtics, champions of the Eastern Conference. The Lakers defeated the Celtics, four
+                games to three, to win the franchise's 16th NBA championship. The 64th[1] edition of the championship series was played
+                between June 3 and June 17, was broadcast on ABC, and was watched by an average of 18.1 million people.\r\n",
+                "highlights": "https://www.youtube.com/embed/dfGQHTpTLkk"
+            },
+            {
+                "id": 7,
+                "year": "2011",
+                "finals_logo": "http://sports-odds.com/images/stories/2011-nba-finals-logo.jpg",
+                "finals_recap": "The 2011 NBA Finals was the championship series of the 2010\u201311 season of the National Basketball
+                Association (NBA) and the conclusion of the season's playoffs. The Western Conference champion Dallas Mavericks defeated
+                the Eastern Conference champion Miami Heat, 4\u20132, to win their first NBA title. Dallas became the latest NBA team from
+                Texas to win its first title, after the Houston Rockets won back-to-back titles in 1994 and 1995, and the San Antonio Spurs
+                won in 1999, 2003, 2005, and 2007; all three Texas NBA teams have now won at least one NBA Championship. It was also the first
+                time in four years that the Los Angeles Lakers did not make the finals.\r\n",
+                "highlights": "https://www.youtube.com/embed/5vXQAz7Cy4o"
+            },
+            {
+                "id": 8,
+                "year": "2012",
+                "finals_logo": "http://upload.wikimedia.org/wikipedia/en/9/99/2012_NBA_Finals_Logo.jpg",
+                "finals_recap": "The 2012 NBA Finals was the championship series of the 2011\u201312 season of the National Basketball
+                Association (NBA) and the conclusion of the season's playoffs. The Eastern Conference champion Miami Heat defeated the
+                Western Conference champion Oklahoma City Thunder, 4\u20131, to win their second NBA title. Miami's LeBron James was named
+                the Finals MVP.\r\nThis marked the fourth time in franchise history that the Oklahoma City Thunder appeared in the NBA Finals
+                and the first time since moving from Seattle to Oklahoma City in 2008. The franchise had previously appeared as the Seattle
+                SuperSonics in 1996. It also marked the Miami Heat's third appearance in the NBA Finals. The Heat previously appeared in 2006
+                and 2011, both times against the Dallas Mavericks.\r\n",
+                "highlights": "https://www.youtube.com/embed/7rHoCOqpaDw"
+            },
+            {
+                "id": 9,
+                "year": "2013",
+                "finals_logo": "http://upload.wikimedia.org/wikipedia/en/e/e1/2013_NBA_Finals_Logo.jpg",
+                "finals_recap": "The 2013 NBA Finals was the championship series of the 2012\u201313 NBA season and the conclusion of the
+                season's playoffs. The Eastern Conference champion Miami Heat defeated the Western Conference champion San Antonio Spurs to win
+                their second straight title. The Finals began with Game 1 on June 6, and ended with Game 7 on June 20.\r\n",
+                "highlights": "https://www.youtube.com/embed/L9gwRnf5c2w"
+            },
+            {
+                "id": 10,
+                "year": "2014",
+                "finals_logo": "http://sports-glutton.com/wp-content/uploads/2013/06/2013-NBA-Finals.jpg",
+                "finals_recap": "The 2014 NBA Finals was the championship series of the 2013\u201314 season of the National Basketball Association
+                (NBA) and the conclusion of the season's playoffs. The Western Conference champion San Antonio Spurs defeated the Eastern Conference
+                champion Miami Heat in five games (4\u20131) for the Spurs' fifth NBA championship in the franchise's history. The Spurs outscored
+                the Heat in the series by the largest average point differential (14.0) in Finals history. San Antonio's Kawhi Leonard was named the
+                Finals Most Valuable Player (MVP), and became the third-youngest recipient of the award.",
+                "highlights": "https://www.youtube.com/embed/xnIjCqO7W0g"
             }
         ]
 
 
-## Season [/seasons/{id}]
+## Season [/api/years/{id}]
 A single Season object with all its details
 
 + Parameters
@@ -599,41 +470,21 @@ A single Season object with all its details
 + Response 200 (application/json)
  
         {
-            "id": 0,
-            "year": "2005",
-            "all_nba": 
-                {
-                    "Tim Duncan", 
-                    "Allen Iverson", 
-                    "Steve Nash", 
-                    "Dirk Nowitzki", 
-                    "Shaquille O'Neal"
-                },
-            "all_def":
-                {
-                    "Bruce Bowen", 
-                    "Tim Duncan", 
-                    "Kevin Garnett", 
-                    "Larry Hughes", 
-                    "Ben Wallace"
-                },
-            "finals_mvp": "Tim Duncan",
-            "champion": "Spurs",
-            "logo": <http://upload.wikimedia.org/wikipedia/en/thumb/6/65/NBA_Finals_05.png/200px-NBA_Finals_05.png>,
-            "finals_recap": "The 2005 NBA Finals was the championship round of the 2004-05 
-                            National Basketball Association season. The San Antonio Spurs of the Western Conference 
-                            faced the Detroit Pistons of the Eastern Conference for the title, with the Spurs holding 
-                            home court advantage and the Pistons as defending champions. The series was played under a 
-                            best-of-seven format. (Unlike the previous three rounds, the team with home court advantage 
-                            hosted games one, two, six, and seven if all were necessary). It also marked the Pistons 
-                            first NBA Finals loss to a team other than the Lakers since 1988. The Spurs won the series 
-                            four games to three in the first NBA Finals to go to a Game 7 since 1994."
+            "id": 7,
+            "year": "2011",
+            "finals_logo": "http://sports-odds.com/images/stories/2011-nba-finals-logo.jpg",
+            "finals_recap": "The 2011 NBA Finals was the championship series of the 2010\u201311 season of the National Basketball Association (NBA)
+            and the conclusion of the season's playoffs. The Western Conference champion Dallas Mavericks defeated the Eastern Conference champion 
+            Miami Heat, 4\u20132, to win their first NBA title. Dallas became the latest NBA team from Texas to win its first title, after the Houston
+            Rockets won back-to-back titles in 1994 and 1995, and the San Antonio Spurs won in 1999, 2003, 2005, and 2007; all three Texas NBA teams 
+            have now won at least one NBA Championship. It was also the first time in four years that the Los Angeles Lakers did not make the finals.\r\n",
+            "highlights": "https://www.youtube.com/embed/5vXQAz7Cy4o"
         }
     
 + Response 404 (application/json)
  
         { 
-            "error": "Resource not found" 
+            "detail": "Not found"
         }
 
 
