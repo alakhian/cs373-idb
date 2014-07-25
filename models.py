@@ -3,6 +3,9 @@ from django.db import models
 # Models for the NBA app
 
 class Team(models.Model) :
+    """
+    Contains the information for an NBA Organization
+    """
     name = models.CharField(max_length=20, unique=True)
     location = models.CharField(max_length=30, unique=True)
     coach = models.CharField(max_length=30, unique=True)
@@ -14,6 +17,8 @@ class Team(models.Model) :
     finals_years = models.CharField(max_length=200, default="")
     mvps = models.CharField(max_length=200, default="")
     finals_mvps = models.CharField(max_length=200, default="")
+
+
 
     #years with results of season (record, playoff recap, mvp awards)
 
@@ -36,19 +41,23 @@ class Team(models.Model) :
 
 
 class Player(models.Model) :
+    """
+    Contains information and statistics for a specific NBA player
+    Also contains a link to one Team
+    Multiple players can have a link to a single team
+    """
     name = models.CharField(max_length=30, unique=True)
     position = models.CharField(max_length=2)
     education = models.CharField(max_length=40)
     years_exp = models.IntegerField(default=0)
+    #stats by year with team played for, gp, gs, min, fg%, ft%, reb, ast, blk, stl, pts
+    #awards for MVP, Finals MVP, all-NBA 1st team, all-defensive 1st team
     twitter = models.URLField(unique=True)
     twitter_widget = models.CharField(max_length=500, default="")
     nickname = models.CharField(max_length=40, default="")
     photo = models.URLField(unique=True)
     highlights = models.URLField(unique=True, default="")
-    #team_logo = models.URLField(unique=True, default="")
     current_team = models.ForeignKey('Team', related_name='current_team', to_field='name', default='none')
-
-    #ha = models.CharField(max_length=2, default="")
 
     #stats are career averages
     gp = models.IntegerField(default=0)
@@ -80,6 +89,10 @@ class Player(models.Model) :
                "photo: " + str(self.photo) + "\n"
     """
 class Year(models.Model) :
+    """
+    Contains information about a NBA Season
+    contains one link to an NBA Team and 2 links to NBA Players
+    """
     year = models.CharField(max_length=4, unique=True)
     #all nba 1st team (players?)
     #all nba defensive (players?)
