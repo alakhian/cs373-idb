@@ -1,0 +1,250 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+
+body{
+  background: url('http://us.cdn281.fansshare.com/photos/kevindurant/kevin-durant-pictures-nba-wallpaper-hd-127610132.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 5%;
+}
+
+#bg{
+  background:url('http://us.cdn281.fansshare.com/photos/kevindurant/kevin-durant-pictures-nba-wallpaper-hd-127610132.jpg') no-repeat center center;
+  height: 100%;
+}
+
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+
+}
+
+/*newly added*/
+.container-finals,
+.container-teamsplayersall,
+.container-playerinfo{
+    background: rgba(192,192,192,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 10px 10px 10px 10px;
+    -webkit-border-top-right-radius: 24px;
+    -webkit-border-top-left-radius: 24px;
+    -moz-border-top-right-radius: 24px;
+    -moz-border-top-left-radius: 24px;
+    -webkit-border-bottom-right-radius: 24px;
+    -webkit-border-bottom-left-radius: 24px;
+    -moz-border-bottom-right-radius: 24px;
+    -moz-border-bottom-left-radius: 24px;
+}
+.container-yearlogo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px 10px 10px 10px;
+    -webkit-border-top-right-radius: 24px;
+    -webkit-border-top-left-radius: 24px;
+    -moz-border-top-right-radius: 24px;
+    -moz-border-top-left-radius: 24px;
+    -webkit-border-bottom-right-radius: 24px;
+    -webkit-border-bottom-left-radius: 24px;
+    -moz-border-bottom-right-radius: 24px;
+    -moz-border-bottom-left-radius: 24px;
+}
+.container-awards{
+    background: rgba(192,192,192,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px 10px 10px 10px;
+    -webkit-border-top-right-radius: 24px;
+    -webkit-border-top-left-radius: 24px;
+    -moz-border-top-right-radius: 24px;
+    -moz-border-top-left-radius: 24px;
+    -webkit-border-bottom-right-radius: 24px;
+    -webkit-border-bottom-left-radius: 24px;
+    -moz-border-bottom-right-radius: 24px;
+    -moz-border-bottom-left-radius: 24px;
+}
+.container-socialmedia{
+    background: rgba(192,192,192,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 20px 20px 20px 20px;
+    -webkit-border-top-right-radius: 24px;
+    -webkit-border-top-left-radius: 24px;
+    -moz-border-top-right-radius: 24px;
+    -moz-border-top-left-radius: 24px;
+    -webkit-border-bottom-right-radius: 24px;
+    -webkit-border-bottom-left-radius: 24px;
+    -moz-border-bottom-right-radius: 24px;
+    -moz-border-bottom-left-radius: 24px;
+}
+.finalslogo{
+    position:absolute;
+    width: 100%;
+
+}
+.row-intro{
+    position: relative;
+    height: 400px;
+    top: 100px;
+}
+.row-video{
+    position: relative;
+    height: 400px;
+}
+
+
+
+#team_logo {
+    position: relative;
+    right: 60px;
+    top: 20px;
+}
+#nba_logo {
+    position: relative;
+    left: 0;
+    top: 35%;
+}
+
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.inner-cover {
+    padding-top: 5%;
+}
+
+.marketing{
+  /*padding-top: 300px;*/
+  padding-top: 10%;
+}
+
+
+@media (min-width: 768px) {
+
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding-top : 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: lighter;
+}
+
+.navbar {
+    padding-bottom: 0px;
+}
+
+/*
+ * Footer
+ */
+
+.mastfoot > a:focus{
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {}
+  /* Pull out the header and footer */
+
+  .mastfoot {
+    position: static;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+
+
+  /*
+   * Marketing
+   */
+
+  /* Center align the text within the three columns */
+  .marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: normal;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  /* Handle the widths */
+  .mastfoot,
+  .marketing,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+@media (min-width: 992px) {
+  .cover-container {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-8,
+  .col-md-4{
+    height: 100%;
+  }
+}
+

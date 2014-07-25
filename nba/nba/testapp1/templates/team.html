@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Team Info</h2>
+
+<body>
+    <div class="container-playerinfo">
+        <div class="row">
+            <div id="image" class="col-md-3">
+                <img style="width:300px; max-width:100%" src="{{team.logo}}">
+            </div>
+            <div class="col-md-6">
+                <strong style="color:black; font-size:2.5em">{{ team.name }}</strong>
+                <br/><br/><br/>
+                <h4>Owner: {{ team.owner }}</h4>
+                <h4>Gm: {{ team.gm }}</h4>
+                <h4>Coach: {{ team.coach }}</h4>
+            </div>
+            <div class="col-md-3">
+                <a class="twitter-timeline" href="{{team.twitter}}" data-widget-id="{{team.twitter_widget}}">Tweets by @spurs</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}

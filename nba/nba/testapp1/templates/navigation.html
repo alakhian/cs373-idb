@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{{STATIC_URL}}/img/basketball.png">
+
+    <title>NBAdb</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{STATIC_URL}}/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{STATIC_URL}}/css/cover.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--script src="../../assets/js/ie-emulation-modes-warning.js"></script -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- script src="../../assets/js/ie10-viewport-bug-workaround.js"></script -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+           <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">NBAdb</a>
+              </div>
+              <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/teams/">All</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/teams/6/">Boston Celtics</a></li>
+                  <li><a href="/teams/7/">Washington Wizards</a></li>
+                  <li><a href="/teams/5/">Dallas Mavericks</a></li>
+                  <li><a href="/teams/9/">Chicago Bulls</a></li>
+                  <li><a href="/teams/8/">Cleveland Cavaliers</a></li>
+                  <li><a href="/teams/3/">Los Angeles Lakers</a></li>
+                  <li><a href="/teams/2/">Miami Heat</a></li>
+                  <li><a href="/teams/10/">Oklahoma City Thunder</a></li>
+                  <li><a href="/teams/4/">Phoenix Suns</a></li>
+                  <li><a href="/teams/1/">San Antonio Spurs</a></li>
+                </ul>
+
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Players <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/players/">All</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/players/3/"> Kobe Bryant </a></li>
+                  <li><a href="/players/1/">Tim Duncan</a></li>
+                  <li><a href="/players/8/">Kevin Durant</a></li>
+                  <li><a href="/players/2/">Lebron James</a></li>
+                  <li><a href="/players/9/">Kawhi Leonard</a></li>
+                  <li><a href="/players/4/"> Steve Nash</a></li>
+                  <li><a href="/players/7/">Dirk Nowitzki</a></li>
+                  <li><a href="/players/6/">Tony Parker</a></li>
+                  <li><a href="/players/11/">Paul Pierce</a></li>
+                  <li><a href="/players/10/">Derrick Rose</a></li>
+                  <li><a href="/players/5/">Dwayne Wade</a></li>
+                </ul>
+
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Years <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/years/">All</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/years/1/">2005</a></li>
+                  <li><a href="/years/2/">2006</a></li>
+                  <li><a href="/years/3/">2007</a></li>
+                  <li><a href="/years/4/">2008</a></li>
+                  <li><a href="/years/5/">2009</a></li>
+                  <li><a href="/years/6/">2010</a></li>
+                  <li><a href="/years/7/">2011</a></li>
+                  <li><a href="/years/8/">2012</a></li>
+                  <li><a href="/years/9/">2013</a></li>
+                  <li><a href="/years/10/">2014</a></li>
+                </ul>
+                </li>
+              </ul>
+
+              </div>
+            </div>
+          </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{{STATIC_URL}}/js/bootstrap.min.js"></script>
+    <script src="{{STATIC_URL}}/js/docs.min.js"></script>
+  </body>
+</html>
