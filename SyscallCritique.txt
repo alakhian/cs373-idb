@@ -1,0 +1,28 @@
+Syscall of the Wild Critique
+
+What did they do well?
+	1. Creating pages that flow well with each other, providing multiple links between cuisines,
+	reviewers, dishes, and restaurants
+	2. Providing a generic dish page that gives the user access to multiple restaurants if 
+	they're "in the mood" for a certain dish.
+	3. They did a good job of providing links to multiple restaurants who offer different types of 
+	cuisines through the website's dishes menu.
+
+What did we learn from their website?
+	1.
+
+What can they do better?
+	1. On the website, the reviews give a text description, but they offer no visual evaluation.
+	In the API those reviews have a Cost Rating and a Quality Rating, and it'd be nice as a user
+	to see those with the text review.
+
+	2. Having a colored bar depicting the average rating for dishes was a good idea, but since
+	a lot of them indicate a 0, it ends up looking like most of the dishes get horrible reviews
+	and shouldn't be eaten.
+
+What puzzles us about their website?
+	1. The pictures that scroll near the top of the webpage link to restaurants, but sometimes not
+ 	the restaurant depicted (sign of Magnolia Cafe links to Hyde Park and Grill).
+
+	2. Each dish has reviews but there's no numerical indication (0-5 stars) of what their text
+ 	review
