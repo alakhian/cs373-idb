@@ -1,3 +1,190 @@
+commit 374c275f61445fc6e308c65e03021524000b651e
+Author: Amar Lakhian <amar.lakhian@utexas.edu>
+Date:   Fri Jul 25 11:50:45 2014 -0500
+
+    final report for phase 2
+
+commit 0b06a844f8cd27edb46e8e29168ce908a6eef42b
+Author: Amar Lakhian <amar.lakhian@utexas.edu>
+Date:   Fri Jul 25 09:14:22 2014 -0500
+
+    revised tech report for phase 2
+
+commit 9167e0aac33643a24d68a0ad0a6a520423e239c9
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Fri Jul 25 08:58:42 2014 -0500
+
+    added commit log #24
+
+commit 469f3ed14e3d063fb6319d6c62c9d3fe13ec01ea
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Fri Jul 25 08:55:34 2014 -0500
+
+    adding PA directory
+
+commit 8b9f35f56b39ef3598f06ab8ed5081757653131c
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Fri Jul 25 08:50:53 2014 -0500
+
+    final update to models
+
+commit 8ebad4ec7a1fbed554fc8a0d540e5370346e34d1
+Author: alakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 24 19:06:40 2014 -0500
+
+    Update Apiary blueprint to reflect data in our Django models
+
+commit a729f83bfac69bd2977fc3a9c39f73f74b368d4c
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Thu Jul 24 18:23:06 2014 -0500
+
+    update to tests.out
+
+commit e883b1d39a97d8ade14f01cc360e93a4af6ecbb0
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Thu Jul 24 13:23:19 2014 -0500
+
+    update
+
+commit 953753383c0df277ea37559d14f3a187e76542fc
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Thu Jul 24 13:21:37 2014 -0500
+
+    update
+
+commit b1bde3fa7216eb27b8e470d10d26a464928dc798
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Thu Jul 24 13:17:52 2014 -0500
+
+    updated technical report for new models+tests #29
+
+commit 04acb7c1ccb4af6a7e9cd19f9483759da033a96f
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Thu Jul 24 12:59:47 2014 -0500
+
+    fixed django model tests for updated models Fixes #21 Fixes #23
+
+commit 7a0bc808cd98da91d31a150224e7ff0e0cc60aa5
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Thu Jul 24 10:20:09 2014 -0500
+
+    added tests
+
+commit 9dcf944edb98872c28a17e44babdbd4f1652ab97
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Thu Jul 24 09:19:16 2014 -0500
+
+    replaced models file with the one from python anywhere
+
+commit 9199f0d831b6d5332246484914b86dde554eaaa0
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Wed Jul 23 13:34:03 2014 -0500
+
+    added twitter urls and widgets
+
+commit 97b4061faab6afc69855727cf94e9b11ba5caa36
+Author: Travis Carpenter <slifer220921@yahoo.com>
+Date:   Wed Jul 23 13:29:00 2014 -0500
+
+    players updated
+
+commit 42550b2ac3ce08e17714198c61e8168d4dafcf93
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Wed Jul 23 13:22:00 2014 -0500
+
+    added Parker and Nowitzski
+
+commit 7280684cb50d69d4d7607d3c43f37a1f4214efe2
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Wed Jul 23 13:03:52 2014 -0500
+
+    fixed typo
+
+commit 1af3969330159a20467028c00b2082384e382354
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Wed Jul 23 13:03:24 2014 -0500
+
+    added Dwyane Wade
+
+commit f0aa5a028a0007b4692a992f889bc29a14f84015
+Merge: 2c407c5 97e064c
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Wed Jul 23 12:39:34 2014 -0500
+
+    Merge branch 'master' of https://github.com/alakhian/cs373-idb
+
+commit 2c407c55a62236b0110380ba9e6c513c0b03b6a3
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Wed Jul 23 12:39:23 2014 -0500
+
+    players
+
+commit a94ca68c472a6586d7b6113c087dce4f3d8cbb32
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Wed Jul 23 12:35:10 2014 -0500
+
+    players
+
+commit 97e064c72c1c77c95f36d6da1c2c895e49b6765f
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Wed Jul 23 01:21:40 2014 -0500
+
+    changed teams.txt
+
+commit 283cd1defbf44a0fbab30fc0e5c46d5068301efc
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Wed Jul 23 01:19:09 2014 -0500
+
+    changed teams.txt
+
+commit 58f9232af2594606383d687aff3c3954e5bd5637
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Tue Jul 22 23:08:30 2014 -0500
+
+    changed years.txt
+
+commit b04f0c332c25417b6bd067677078e1a6b9b143d8
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Tue Jul 22 17:01:00 2014 -0500
+
+    steve nash
+
+commit 76c7afdea5328ecc1a7b11bd4fb9f72ef67b6f77
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Tue Jul 22 16:50:54 2014 -0500
+
+    change to teams.txt
+
+commit ac162f0675629bab794c53b701a2e95bc93dd22c
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Tue Jul 22 16:47:27 2014 -0500
+
+    changes to teams.txt
+
+commit cf3b78b9f8702687e1a78284673fa50422f33cfd
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Tue Jul 22 11:39:31 2014 -0500
+
+    update to models
+
+commit 339f5908d90620165f21932a332fc3854ca9b8b0
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Tue Jul 22 09:45:34 2014 -0500
+
+    fixed a couple names of fields #21
+
+commit 3fceb9647866d98e67adc9b08397b2a091009f75
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Mon Jul 21 16:54:09 2014 -0500
+
+    switched around fields in models #21
+
+commit db62057c0bc92c72a826eb5629166e820ad90ae5
+Author: Amar Lakhian <amar.lakhian@utexas.edu>
+Date:   Thu Jul 10 19:28:59 2014 -0500
+
+    made final changes. adding log
+
 commit 668b812ee842970b043f25e214c9d3df8a2218cf
 Author: Amar Lakhian <amar.lakhian@utexas.edu>
 Date:   Thu Jul 10 19:26:41 2014 -0500

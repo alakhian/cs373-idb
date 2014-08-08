@@ -1,0 +1,20 @@
+Create a critique of your website by answering the following questions: 
+
+What did we do well? 
+	Aesthetically speaking, our page is set up in a way that does not put a large strain on the eyes of the user. The darker background image, combined with both the dark colors of the navigation bar as well as the semi-transparent borders surrounding foreground words and text, all help to contrast the words and images contained on the different pages, making them all stand out and easier to read.In terms of the information on the pages, on top of the information being displayed in an direct way that allow users to flow from one page to another, there are many different videos and twitter feeds on pages making them much more interactive and enjoyable. In terms of navigation, the navigation bar is set up in a way that allows the user to get to any of the pages that our site hosts through the drop-down menus, as well as search for pages using the search bar. On top of this, the website scales great on all formats, from computers to tablets to smart phone, allowing the site to be easily accessible anywhere.
+
+What did we learn? 
+	-
+	-
+	-
+	-
+	-We learned how to quickly gather data from the web, create an SQL Schema using Django tools, as well as a UML diagram based off of our django models using GenMyModels
+
+What can we do better? 
+	One thing we can do to improve the site is for computer browsers to have the site scale when the window is scaled vertically on top of the scaling when the window is scaled horizontally. We could also have the all teams, players, and seasons pages list the pages in a grid pattern instead of having them in a single list straight down. This would make it quicker to find a certain page.
+
+What puzzles us? 
+	-We have it set up to where season pages link to player pages, but dont have any links from player pages to seasons. 
+	-Both the “Home” button as well as the “NBAdb” do the same thing, which is return the user back to the home/splash page.
+
+

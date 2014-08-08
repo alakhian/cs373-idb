@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+    <p><strong style="font-family:lucida consol; font-size:2.0em">Player Info</strong></p>
+
+<body>
+    <div class="container-playerinfo">
+        <div class="row">
+            <div id="image" class="col-md-3">
+                <img style="width:300px; max-width:100%" src="{{player.photo}}">
+            </div>
+            <div class="col-md-6">
+                <strong style="color:black; font-size:2.5em">{{ player.name }}</strong>
+                <h4 style="font-style:italic">{{ player.nickname }}</h4>
+                <h4>Position: {{ player.position }}</h4>
+                <h4>Education: {{ player.education }}</h4>
+                <h4>Experience: {{ player.years_exp }} years</h4>
+                <strong style="color:black; font-size:1.5em">Current Team: {{ player.current_team }}</strong>
+            </div>
+            <div class="col-md-3">
+                <div id="image">
+                    <img style="width:300px; max-width:100%" src="{{player.current_team.logo}}">
+                </div>
+            </div>
+        </div>
+    </div>
+<br></br>
+    <p><strong style="font-family:lucida consol; font-size:2.0em">Finals Info</strong></p>
+    <div class="container-finals">
+        <div class="row">
+            <div id="image" class="col-md-3">
+                <img style="width:300px; max-width:100%" src="http://img8.hostingpics.net/pics/7702222010_Playoffs.png">
+            </div>
+            <div class="col-md-6">
+                <p><strong style="color:#000066; font-family:lucida consol; font-size:1.5em">Finals Apperance: {{ player.finals_years }}</strong></p>
+                <p><strong style="color:#000066; font-family:lucida consol; font-size:1.5em">Finals Team: {{ player.finals_teams }}</strong></p>
+            </div>
+            <div id="image" class="col-md-3">
+                <img style="width:300px; max-width:100%" src="http://upload.wikimedia.org/wikipedia/commons/4/4f/NBA_Finals_logo.png">
+            </div>
+
+        </div>
+    </div>
+<br></br>
+    <p><strong style="font-family:lucida consol; font-size:2.0em">Awards</strong></p>
+    <div class="container-awards">
+        <div class="row">
+
+            <div class="col-md-12">
+                <p><strong style="color:#000066; font-family:lucida consol; font-size:1.6em">MVP: {{ player.mvp_years }}</strong></p>
+                <p><strong style="color:#000066; font-family:lucida consol; font-size:1.6em">Finals MVP: {{ player.finalsmvp_years }}</strong></p>
+                <p><strong style="color:#000066; font-family:lucida consol; font-size:1.6em">All NBA: {{ player.allnba_years }}</strong></p>
+                <p><strong style="color:#000066; font-family:lucida consol; font-size:1.6em">All NBA Defensive: {{ player.alldef_years }}</strong></p>
+
+            </div>
+
+        </div>
+    </div>
+<br></br>
+    <p><strong style="font-family:lucida consol; font-size:2.0em">Social Media</strong></p>
+    <div class="container-socialmedia">
+        <div class="row">
+            <div class="col-md-8">
+                <iframe width="100%" height="30%" src="{{player.highlights}}" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-md-4">
+                <a class="twitter-timeline" href="{{player.twitter}}" data-widget-id="{{player.twitter_widget}}">Tweets by @kobebryant</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+        </div>
+    </div>
+
+</body>
+{% endblock %}
