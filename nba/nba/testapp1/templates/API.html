@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+
+<head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/static/js/my_script.js"></script>
+    <ul></ul>
+    <script>
+        $(document).ready(function() {
+           $.getJSON("/static/json/prac.json", function(data) {
+               $.each(data, function() {
+               /*document.write(fb.name);*/
+                $('#stage1').append('<p><h2>' + this.name + '</h2></p>');
+                $('#stage1').append('<p>Address: ' + this.address + '</p>');
+                $('#stage1').append('<p>Phone: ' + this.phone_number + '</p>');
+                $('#stage1').append('<p>' + this.description + '</p>');
+                $('#stage1').append();
+                /*$('#stage').append('<p> Id: ' + fb.id + '</p>');*/
+               });
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+           $.getJSON("/static/json/prac1.json", function(data) {
+                $.each(data, function() {
+               /*document.write(fb.name);*/
+                    $('#stage2').append('<p><h2>' + this[0].name + '</h2></p>');
+                    $('#stage2').append('<p><h3>Average Rating: ' + this[0].star_avg_rating + '<h3></p>');
+                    $('#stage2').append('<p>' + this[0].description + '</p>');
+                    $('#stage2').append();
+                    $('#stage2').append('<p><h2>' + this[1].name + '</h2></p>');
+                    $('#stage2').append('<p><h3>Average Rating: ' + this[1].star_avg_rating + '<h3></p>');
+                    $('#stage2').append('<p>' + this[1].description + '</p>');
+                });
+
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+<br></br>
+    <p><strong style="font-family:lucida consol; font-size:2.1em">Hungry?</strong></p>
+    <p><strong style="font-family:lucida consol; font-size:1.8em">Check out some restaurants that <a href="http://notoriousbiginteger.pythonanywhere.com/">"Syscall of the Wild"</a> explored!</strong></p>
+    <div class="container-playerinfo">
+        <div class="row">
+            <div id="image" class="col-md-4">
+
+                <a href="http://notoriousbiginteger.pythonanywhere.com/restaurants/1/"><img style="width:300px; max-width:100%" src="http://2.bp.blogspot.com/_qeoMt3Hioy8/TU9G4EaQYSI/AAAAAAAAA_4/IKuHjHlTqdM/s1600/IMG_1415.JPG"></a>
+                <p><strong style="font-family:lucida consol; font-size:1.7em">Near Campus!</strong></p>
+            </div>
+            <div class="col-md-4">
+                <a href="http://notoriousbiginteger.pythonanywhere.com/restaurants/2/"><img style="width:300px; max-width:100%" src="http://www.firstcallaustin.com/AustinPictures/MagnoliaCafe.jpg"></a>
+                <p><strong style="font-family:lucida consol; font-size:1.7em">Open 24 HOURS!!!</strong></p>
+            </div>
+            <div class="col-md-4">
+                <a href="http://notoriousbiginteger.pythonanywhere.com/restaurants/3/"><img style="width:200px; max-width:100%" src="http://s3-media2.fl.yelpcdn.com/bphoto/dqBlOJB6YQ0GkxDVUutJ6w/348s.jpg"></a>
+                <p><strong style="font-family:lucida consol; font-size:1.7em">Authentic Thai</strong></p>
+            </div>
+        </div>
+    </div>
+<br></br>
+    <p><strong style="font-family:lucida consol; font-size:1.8em">Quick Overview</strong></p>
+    <div class="container-playerinfo">
+        <div id="stage1">
+
+        </div>
+    </div>
+<br></br>
+    <p><strong style="font-family:lucida consol; font-size:1.8em">Foods with Great Ratings</strong></p>
+    <div class="container-playerinfo">
+        <div id="stage2">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="https://notoriousbiginteger.pythonanywhere.com/dishes/5/"><img style="width:250px; max-width:100%" src="https://notoriousbiginteger.pythonanywhere.com/static/img/dishes/5.png"></a>
+                </div>
+                <div class="col-md-6">
+                    <a href="https://notoriousbiginteger.pythonanywhere.com/dishes/8/"><img style="width:250px; max-width:100%" src="https://notoriousbiginteger.pythonanywhere.com/static/img/dishes/8.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+<br></br>
+<script>
+
+</script>
+
+</body>
+{% endblock %}
+

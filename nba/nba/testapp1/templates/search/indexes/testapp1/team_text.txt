@@ -1,0 +1,13 @@
+{{ object.name }}
+{{ object.location }}
+{{ object.coach }}
+{{ object.gm }}
+{{ object.owner }}
+{{ object.finals_years }}
+{{ object.finals_mvps }}
+{{ object.stadium }}
+{{ object.map_lat }}
+{{ object.map_lng }}
+{{ object.map_lng }}
+{{ object.map_address }}
+{{ object.content }}

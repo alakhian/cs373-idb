@@ -17,6 +17,10 @@ class Team(models.Model) :
     finals_years = models.CharField(max_length=200, default="")
     mvps = models.CharField(max_length=200, default="")
     finals_mvps = models.CharField(max_length=200, default="")
+    stadium = models.CharField(max_length=200, default="")
+    map_lat = models.CharField(max_length=200, default="")
+    map_lng = models.CharField(max_length=200, default="")
+    map_address = models.CharField(max_length=200, default="")
 
 
 
@@ -34,6 +38,8 @@ class Team(models.Model) :
                "twitter: " + str(self.twitter) + "\n" \
                "logo: " + str(self.logo) + "\n"
     """
+    def get_absolute_url(self):
+        return "/teams/%i/" % self.id
 
     #class Meta:
     #    app_label = 'nba'
@@ -59,6 +65,7 @@ class Player(models.Model) :
     highlights = models.URLField(unique=True, default="")
     current_team = models.ForeignKey('Team', related_name='current_team', to_field='name', default='none')
 
+
     #stats are career averages
     gp = models.IntegerField(default=0)
     gs = models.IntegerField(default=0)
@@ -79,6 +86,9 @@ class Player(models.Model) :
 
     def __unicode__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return "/players/%i/" % self.id
     """
     def __str__(self) :
         return "name: " + self.name + "\n" \
@@ -111,3 +121,6 @@ class Year(models.Model) :
 
     def __unicode__(self):
         return self.year
+
+    def get_absolute_url(self):
+        return "/years/%i/" % self.id

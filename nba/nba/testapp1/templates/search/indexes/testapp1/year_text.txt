@@ -1,0 +1,8 @@
+{{ object.year }}
+{{ object.finals_recap }}
+{{ object.all_nba }}
+{{ object.all_def }}
+{{ object.reg_mvp }}
+{{ object.finals_mvp }}
+{{ object.champion }}
+

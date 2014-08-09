@@ -32,7 +32,7 @@
 
   <body>
            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
+            <div class="container-fluid">
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                   <span class="sr-only">Toggle navigation</span>
@@ -43,7 +43,7 @@
                 <a class="navbar-brand" href="/">NBAdb</a>
               </div>
               <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav navbar-left">
                 <li><a href="/">Home</a></li>
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <span class="caret"></span></a>
@@ -51,7 +51,6 @@
                   <li><a href="/teams/">All</a></li>
                   <li class="divider"></li>
                   <li><a href="/teams/6/">Boston Celtics</a></li>
-                  <li><a href="/teams/7/">Washington Wizards</a></li>
                   <li><a href="/teams/5/">Dallas Mavericks</a></li>
                   <li><a href="/teams/9/">Chicago Bulls</a></li>
                   <li><a href="/teams/8/">Cleveland Cavaliers</a></li>
@@ -60,7 +59,9 @@
                   <li><a href="/teams/10/">Oklahoma City Thunder</a></li>
                   <li><a href="/teams/4/">Phoenix Suns</a></li>
                   <li><a href="/teams/1/">San Antonio Spurs</a></li>
+                  <li><a href="/teams/7/">Washington Wizards</a></li>
                 </ul>
+                </li>
 
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Players <span class="caret"></span></a>
@@ -79,6 +80,7 @@
                   <li><a href="/players/10/">Derrick Rose</a></li>
                   <li><a href="/players/5/">Dwayne Wade</a></li>
                 </ul>
+                </li>
 
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Years <span class="caret"></span></a>
@@ -97,6 +99,27 @@
                   <li><a href="/years/10/">2014</a></li>
                 </ul>
                 </li>
+
+                <!-- <form class="navbar-form pull-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+
+                <li class="pull-right"><a href="/about">About</a></li> -->
+
+                <li><a href="/API">API</a></li>
+
+              </ul>
+
+              <form action="/search" method="get" class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" name="q" class="form-control" placeholder="Search">
+                </div>
+              </form>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="/about">About</a></li>
               </ul>
 
               </div>

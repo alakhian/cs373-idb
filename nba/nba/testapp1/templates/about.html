@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>About</h2>
+
+
+
+<body>
+    <div class="container">
+        <div class="tabbable tabs-left">
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#tab1" data-toggle="tab">Description</a></li>
+                <li><a href="#tab2" data-toggle="tab">Group Members</a></li>
+                <li><a href="#tab3" data-toggle="tab">Tools Used</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab1">
+                <br></br>
+                    <div class="container-playerinfo">
+                        <strong style="color:#FFFFCC; font-size:1.3em"><p>This site gives you a quick overview of how the last 10 seasons of the NBA was played out.</p>
+                        <p>You can find all the champions and the runner-ups for the past 10 seasons in the "Years" page. All the regular season MVPs and finals MVPs
+                        are listed in the "Players" page.</p>
+                        <p>These players' current and past teams are listed in the "Teams" page.</p>
+
+                        </strong>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab2">
+                    </br>
+                    <div class="container-playerinfo">
+                        <strong style="color:black; font-size:2.5em">Amar Lakhian</strong>
+                        <h4>Phase one group leader</h4>
+                        <h4>API development, search functionality, unit tests</h4>
+                    </div>
+                    </br>
+                    <div class="container-playerinfo">
+                        <strong style="color:black; font-size:2.5em">Brian Tetzlaff</strong>
+                        <h4>Phase two group leader</h4>
+                        <h4>Django models, unit tests, UML model, Kravester site critique</h4>
+                    </div>
+                    </br>
+                    <div class="container-playerinfo">
+                        <strong style="color:black; font-size:2.5em">Juan Reyes</strong>
+                        <h4>Page design using HTML and CSS, search functionality</h4>
+                    </div>
+                    </br>
+                    <div class="container-playerinfo">
+                        <strong style="color:black; font-size:2.5em">Lawrence Choi</strong>
+                        <h4>Phase three group leader</h4>
+                        <h4>HTML pages, django models, Kravester API implementation</h4>
+                    </div>
+                    </br>
+                    <div class="container-playerinfo">
+                        <strong style="color:black; font-size:2.5em">Travis Carpenter</strong>
+                        <h4>Gathered initial data, NBAdb site critique, SQL, UML diagram</h4>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab3">
+                    <div class="container-playerinfo">
+                        <ul>
+                            <p><a href="https://www.pythonanywhere.com/">PythonAnywhere</a></p>
+                            <p><a href="http://apiary.io/">Apiary</a></p>
+                            <p><a href="https://www.djangoproject.com/">Django</a></p>
+                            <p><a href="http://getbootstrap.com/">Twitter Bootstrap</a></p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock %}

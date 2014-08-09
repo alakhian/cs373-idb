@@ -2,25 +2,76 @@
 {% block content %}
     <h2>Team Info</h2>
 
+<head>
+    <style>
+        #map_canvas {
+            width: 300px;
+            height: 200px;
+            margin-left: auto;
+
+        }
+    </style>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+			function initialize() {
+				var map_canvas = document.getElementById('map_canvas');
+				var map_options = {
+					center: new google.maps.LatLng({{team.map_lat}}, {{team.map_lng}}),
+					zoom: 15,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+				var map = new google.maps.Map(map_canvas, map_options)
+
+  				var marker = new google.maps.Marker({
+    				position: map.getCenter(),
+    				icon: {
+      					path: google.maps.SymbolPath.BACKWARD_CLOSED_ARROW,
+      					scale: 5
+    				},
+    				draggable: false,
+    				map: map
+  				});
+
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+</head>
+
 <body>
-    <div class="container-playerinfo">
+    <div class="container-socialmedia">
         <div class="row">
-            <div id="image" class="col-md-3">
+            <div id="image" class="col-sm-12 col-md-3">
                 <img style="width:300px; max-width:100%" src="{{team.logo}}">
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6 col-md-6">
                 <strong style="color:black; font-size:2.5em">{{ team.name }}</strong>
                 <br/><br/><br/>
                 <h4>Owner: {{ team.owner }}</h4>
                 <h4>Gm: {{ team.gm }}</h4>
                 <h4>Coach: {{ team.coach }}</h4>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
                 <a class="twitter-timeline" href="{{team.twitter}}" data-widget-id="{{team.twitter_widget}}">Tweets by @spurs</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
         </div>
     </div>
+    <br></br>
+    <h2>Team Stadium</h2>
+    <div class="container-map">
+        <div class="row">
+            <div class="col-md-6">
+                <strong style="color:black; font-size:1.7em">Stadium</strong>
+                <h4>{{ team.stadium }}</h4>
+                <strong style="color:black; font-size:1.7em">Address</strong>
+                <h4>{{ team.map_address }}</h4>
+            </div>
+            <div class="col-md-6" style="padding-right:15%">
+                <div id="map_canvas"></div>
+            </div>
+        </div>
+    </div>
+    <br></br>
 </body>
 
 {% endblock %}

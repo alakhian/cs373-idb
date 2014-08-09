@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block search %}{% endblock %}
+
+{% block content %}
+</br>
+
+<h1>Results for {{query_list}}</h1>
+
+<div class="container-search">
+    <h1>AND Results</h1>
+        </br>
+        <h2><strong style="color:black">
+            Teams
+        </strong></h2>
+        {% for t in team_and %}
+        <h3>
+            <a href="/teams/{{ t.id }}/">
+            <div class="context">
+                <strong style="color:#FFFFCC">{{t.name}}</strong>
+            </div>
+            </a>
+            </br>
+            <div class="context">
+                <p>Location: {{t.location}}</p>
+                <p>Coach: {{t.coach}}</p>
+                <p>GM: {{t.gm}}</p>
+                <p>Owner: {{t.owner}}</p>
+            </div>
+        </h3>
+        {% endfor %}
+        </br></br>
+        <h2><strong style="color:black">
+            Players
+        </strong></h2>
+        {% for p in player_and %}
+        <h3>
+            <a href="/players/{{ p.id }}/">
+            <div class="context">
+                <strong style="color:#FFFFCC">{{p.name}}</strong>
+            </div>
+            </a>
+            <div class="context">
+                <p>Position: {{p.position}}</p>
+                <p>Education: {{p.education}}</p>
+                <p>Experience: {{p.years_exp}}</p>
+            </div>
+        </h3>
+        {% endfor %}
+        </br></br>
+        <h2><strong style="color:black">
+            Years
+        </strong></h2>
+        {% for y in year_and %}
+        <h3>
+            <a href="/years/{{ y.id }}/">
+            <div class="context">
+                <strong style="color:#FFFFCC">{{y.year}}</strong>
+            </div>
+            </a>
+            <div class="context">
+                <p>Recap: {{ y.finals_recap }}</p>
+                <p>All-NBA: {{y.all_nba}}</p>
+                <p>All-Defense: {{y.all_def}}</p>
+             </div>
+        </h3>
+        {% endfor %}
+</div>
+    </br></br>
+
+
+         <!-- OR -->
+<div class="container-search">
+        <h1>OR Results</h1>
+        <h2><strong style="color:black">
+            Teams
+        </strong></h2>
+        {% for t in team %}
+        <h3>
+            <a href="/teams/{{ t.id }}/">
+            <div class="context">
+                <strong style="color:#FFFFCC">{{t.name}}</strong>
+            </div>
+            </a>
+            </br>
+            <div class="context">
+                <p>Location: {{t.location}}</p>
+                <p>Coach: {{t.coach}}</p>
+                <p>GM: {{t.gm}}</p>
+                <p>Owner: {{t.owner}}</p>
+            </div>
+        </h3>
+        {% endfor %}
+        </br></br>
+        <h2><strong style="color:black">
+            Players
+        </strong></h2>
+        {% for p in player %}
+        <h3>
+            <a href="/players/{{ p.id }}/">
+            <div class="context">
+                <strong style="color:#FFFFCC">{{p.name}}</strong>
+            </div>
+            </a>
+            <div class="context">
+                <p>Position: {{p.position}}</p>
+                <p>Education: {{p.education}}</p>
+                <p>Experience: {{p.years_exp}}</p>
+            </div>
+        </h3>
+        {% endfor %}
+        </br></br>
+        <h2><strong style="color:black">
+            Years
+        </strong></h2>
+        {% for y in year %}
+        <h3>
+            <a href="/years/{{ y.id }}/">
+            <div class="context">
+                <strong style="color:#FFFFCC">{{y.year}}</strong>
+            </div>
+            </a>
+            <div class="context">
+                <p>Recap: {{ y.finals_recap }}</p>
+                <p>All-NBA: {{y.all_nba}}</p>
+                <p>All-Defense: {{y.all_def}}</p>
+            </div>
+        </h3>
+        {% endfor %}
+</div>
+{% endblock %}
+

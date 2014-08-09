@@ -1,29 +1,61 @@
 {% extends "base.html" %}
 {% block content %}
+
     <p><strong style="font-family:lucida consol; font-size:2.0em">Player Info</strong></p>
 
 <body>
     <div class="container-playerinfo">
         <div class="row">
-            <div id="image" class="col-md-3">
+            <div id="image" class="col-sm-12 col-md-3">
                 <img style="width:300px; max-width:100%" src="{{player.photo}}">
             </div>
-            <div class="col-md-6">
-                <strong style="color:black; font-size:2.5em">{{ player.name }}</strong>
+            <div class="col-sm-6 col-md-6">
+                <h1><strong style="color:black">{{ player.name }}</strong></h1>
                 <h4 style="font-style:italic">{{ player.nickname }}</h4>
                 <h4>Position: {{ player.position }}</h4>
                 <h4>Education: {{ player.education }}</h4>
                 <h4>Experience: {{ player.years_exp }} years</h4>
-                <strong style="color:black; font-size:1.5em">Current Team: {{ player.current_team }}</strong>
+                <h3><strong style="color:black">Current Team: {{ player.current_team }}</strong></h3>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
                 <div id="image">
-                    <img style="width:300px; max-width:100%" src="{{player.current_team.logo}}">
+                    <a href="/teams/{{player.current_team.pk}}"><img style="width:300px; max-width:100%" src="{{player.current_team.logo}}"></a>
                 </div>
             </div>
         </div>
     </div>
 <br></br>
+    <p><strong style="font-family:lucida consol; font-size:2.0em">Career Statistics</strong></p>
+    <div class="container-table">
+        <table>
+            <tr>
+                <th>GP</th>
+                <th>GS</th>
+                <th>MIN</th>
+                <th>FG%</th>
+                <th>FT%</th>
+                <th>REB</th>
+                <th>AST</th>
+                <th>BLK</th>
+                <th>STL</th>
+                <th>PTS</th>
+            </tr>
+            <tr>
+                <td>{{player.gp}}</td>
+                <td>{{player.gs}}</td>
+                <td>{{player.minpg}}</td>
+                <td>{{player.fgperc}}</td>
+                <td>{{player.ftperc}}</td>
+                <td>{{player.reb}}</td>
+                <td>{{player.ast}}</td>
+                <td>{{player.blk}}</td>
+                <td>{{player.stl}}</td>
+                <td>{{player.pts}}</td>
+            </tr>
+        </table>
+    </div>
+<br></br>
+
     <p><strong style="font-family:lucida consol; font-size:2.0em">Finals Info</strong></p>
     <div class="container-finals">
         <div class="row">
@@ -69,6 +101,6 @@
             </div>
         </div>
     </div>
-
+    <br></br>
 </body>
 {% endblock %}

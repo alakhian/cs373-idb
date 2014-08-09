@@ -48,13 +48,29 @@ body {
 }
 
 /*newly added*/
-.container-finals,
-.container-teamsplayersall,
-.container-playerinfo{
+table, th, td{
+    border:2px solid black;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+#stage1, #stage2{
+    color:#FFFFCC;
+    font-size:1.2em;
+    font-family:lucida consol;
+}
+
+.form-group{
+    width: 60%;
+}
+
+.container-map{
     background: rgba(192,192,192,0.5);
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 50%;
     padding: 10px 10px 10px 10px;
     -webkit-border-top-right-radius: 24px;
     -webkit-border-top-left-radius: 24px;
@@ -64,6 +80,43 @@ body {
     -webkit-border-bottom-left-radius: 24px;
     -moz-border-bottom-right-radius: 24px;
     -moz-border-bottom-left-radius: 24px;
+    overflow: hidden;
+}
+
+.container-table{
+    background: rgba(192,192,192,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding: 10px 10px 10px 10px;
+    -webkit-border-top-right-radius: 24px;
+    -webkit-border-top-left-radius: 24px;
+    -moz-border-top-right-radius: 24px;
+    -moz-border-top-left-radius: 24px;
+    -webkit-border-bottom-right-radius: 24px;
+    -webkit-border-bottom-left-radius: 24px;
+    -moz-border-bottom-right-radius: 24px;
+    -moz-border-bottom-left-radius: 24px;
+    overflow: auto;
+}
+
+.container-finals,
+.container-teamsplayersall,
+.container-playerinfo{
+    background: rgba(192,192,192,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding: 10px 10px 10px 10px;
+    -webkit-border-top-right-radius: 24px;
+    -webkit-border-top-left-radius: 24px;
+    -moz-border-top-right-radius: 24px;
+    -moz-border-top-left-radius: 24px;
+    -webkit-border-bottom-right-radius: 24px;
+    -webkit-border-bottom-left-radius: 24px;
+    -moz-border-bottom-right-radius: 24px;
+    -moz-border-bottom-left-radius: 24px;
+
 }
 .container-yearlogo{
     margin-left: auto;
@@ -83,7 +136,7 @@ body {
     background: rgba(192,192,192,0.5);
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 75%;
     padding: 10px 10px 10px 10px;
     -webkit-border-top-right-radius: 24px;
     -webkit-border-top-left-radius: 24px;
@@ -109,6 +162,22 @@ body {
     -moz-border-bottom-right-radius: 24px;
     -moz-border-bottom-left-radius: 24px;
 }
+
+.container-search{
+    background: rgba(192,192,192,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 20px 20px 20px 20px;
+    -webkit-border-top-right-radius: 24px;
+    -webkit-border-top-left-radius: 24px;
+    -moz-border-top-right-radius: 24px;
+    -moz-border-top-left-radius: 24px;
+    -webkit-border-bottom-right-radius: 24px;
+    -webkit-border-bottom-left-radius: 24px;
+    -moz-border-bottom-right-radius: 24px;
+    -moz-border-bottom-left-radius: 24px;
+}
 .finalslogo{
     position:absolute;
     width: 100%;
@@ -116,8 +185,10 @@ body {
 }
 .row-intro{
     position: relative;
-    height: 400px;
-    top: 100px;
+    width: 60%;
+    text-align: center;
+    /*height: 400px;
+    top: 100px;*/
 }
 .row-video{
     position: relative;
@@ -135,6 +206,11 @@ body {
     position: relative;
     left: 0;
     top: 35%;
+}
+
+b.color {
+    background-color: #cc6600;
+    color: #fff;
 }
 
 
@@ -163,6 +239,10 @@ body {
 .marketing{
   /*padding-top: 300px;*/
   padding-top: 10%;
+}
+
+.form-group{
+    padding-right:30px;
 }
 
 
@@ -212,10 +292,6 @@ body {
     vertical-align: middle;
   }
 
-
-  /*
-   * Marketing
-   */
 
   /* Center align the text within the three columns */
   .marketing .col-lg-4 {

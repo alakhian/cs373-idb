@@ -1,0 +1,12 @@
+{{ object.name }}
+{{ object.position }}
+{{ object.education }}
+{{ object.years_exp }}
+{{ object.twitter_widget }}
+{{ object.nickname }}
+{{ object.finals_years }}
+{{ object.finals_teams }}
+{{ object.mvp_years }}
+{{ object.finalsmvp_years }}
+{{ object.allnba_years }}
+{{ object.alldef_years }}

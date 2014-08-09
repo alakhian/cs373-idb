@@ -39,7 +39,7 @@
         <div class="cover-container">
 
           <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
+            <div class="container-fluid">
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                   <span class="sr-only">Toggle navigation</span>
@@ -50,7 +50,7 @@
                 <a class="navbar-brand" href="/">NBAdb</a>
               </div>
               <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav navbar-left">
                 <li><a href="/">Home</a></li>
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <span class="caret"></span></a>
@@ -58,7 +58,6 @@
                   <li><a href="/teams/">All</a></li>
                   <li class="divider"></li>
                   <li><a href="/teams/6/">Boston Celtics</a></li>
-                  <li><a href="/teams/7/">Washington Wizards</a></li>
                   <li><a href="/teams/5/">Dallas Mavericks</a></li>
                   <li><a href="/teams/9/">Chicago Bulls</a></li>
                   <li><a href="/teams/8/">Cleveland Cavaliers</a></li>
@@ -67,6 +66,7 @@
                   <li><a href="/teams/10/">Oklahoma City Thunder</a></li>
                   <li><a href="/teams/4/">Phoenix Suns</a></li>
                   <li><a href="/teams/1/">San Antonio Spurs</a></li>
+                  <li><a href="/teams/7/">Washington Wizards</a></li>
                 </ul>
 
                 <li class="dropdown">
@@ -104,6 +104,19 @@
                   <li><a href="/years/10/">2014</a></li>
                 </ul>
                 </li>
+
+                <li><a href="/API">API</a></li>
+
+              </ul>
+
+              <form action="/search" method="get" class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" name="q" class="form-control" placeholder="Search">
+                </div>
+              </form>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="/about">About</a></li>
               </ul>
 
               </div>
@@ -127,34 +140,32 @@
         </div>
 -->
 
-        <div class="row-intro">
-            <iframe width="60%" height="100%" src="https://www.youtube.com/embed/OlEus6SLFHI" frameborder="0" allowfullscreen></iframe>
-        </div>
-        </br></br>
-          <div class="container marketing">
-          <!-- Three columns of text -->
             <div class="row">
-              <div class="col-lg-4">
-                <a href="/teams/"><img class="img-rounded" src="http://img3.wikia.nocookie.net/__cb20101020224944/nba/images/e/ec/San_Antonio_Spurs_logo.png" style="width: 70%"></a>
-                <h2><a href="/teams/">Teams</a></h2>
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-4">
-                <a href="/players/"><img class="img-rounded" src="http://www.super.ae/wp-content/uploads/2012/06/lebron-james-nba-champion.jpg" alt="Generic placeholder image" style="width: 68%"></a>
-                <h2><a href="/players/">Players</a></h2>
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-4">
-                <a href="/years/"><img class="img-rounded" src="http://t1.rbxcdn.com/a3d84e8396b0d5ed1ee18939d55b9f94" alt="Generic placeholder image" style="width: 38%"></a>
-                <h2><a href="/years/">Years</a></h2>
-              </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
+                <div class="col-lg-12">
+                    <iframe width="60%" height="350px" src="https://www.youtube.com/embed/OlEus6SLFHI" frameborder="0" allowfullscreen></iframe>
+                </br></br></br></br>
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="/teams/"><img class="img-rounded" src="http://img3.wikia.nocookie.net/__cb20101020224944/nba/images/e/ec/San_Antonio_Spurs_logo.png" style="width: 200px; max-width: 70%"></a>
+                    <h2><a href="/teams/">Teams</a></h2>
+                </div>
+                <div class="col-sm-4">
+                    <a href="/players/"><img class="img-rounded" src="http://www.super.ae/wp-content/uploads/2012/06/lebron-james-nba-champion.jpg" alt="Generic placeholder image" style="width: 200px; max-width: 70%"></a>
+                    <h2><a href="/players/">Players</a></h2>
+                </div>
+                <div class="col-sm-4">
+                    <a href="/years/"><img class="img-rounded" src="http://t1.rbxcdn.com/a3d84e8396b0d5ed1ee18939d55b9f94" alt="Generic placeholder image" style="width: 120px; max-width: 38%"></a>
+                    <h2><a href="/years/">Years</a></h2>
+                </div>
+            </div>
 
             <div class="mastfoot">
-              <!-- <div class="inner"> -->
                 <p>Royal Flush Members: Amar Lakhian, Brian Tetzlaff, Lawrence Choi, Juan Reyes, Travis Carpenter</p>
               </div>
             </div>
 
-          </div>
+
 
         </div>
 

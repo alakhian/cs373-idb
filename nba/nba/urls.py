@@ -21,6 +21,9 @@ urlpatterns = patterns('',
     url(r'^teams/$', 'nba.testapp1.views.TeamsAll'),
     url(r'^years/$', 'nba.testapp1.views.YearsAll'),
 
+    url(r'^about/$', 'nba.testapp1.views.About'),
+    url(r'^API/$', 'nba.testapp1.views.API'),
+
 
     url(r'^players/(?P<pk>\d+)/$', DetailView.as_view(
                         model = Player,
@@ -45,6 +48,8 @@ urlpatterns = patterns('',
     url(r'^api/players/(?P<pk>[0-9]+)/$', PlayerDetail.as_view()),
     url(r'^api/years/$', YearList.as_view()),
     url(r'^api/years/(?P<pk>[0-9]+)/$', YearDetail.as_view()),
+    #url(r'^search/', include('haystack.urls')),
+    url(r'^search/', 'nba.testapp1.views.search'),
 )
 
 urlpatterns = format_suffix_patterns(urlpatterns)
