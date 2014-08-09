@@ -1,3 +1,94 @@
+commit b32ec7c52ab628fa32dbc27c1a48157dbd5221b3
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Fri Aug 8 21:43:58 2014 -0500
+
+    update
+
+commit 2993ca5a9459dc42cedd7ec3e3048bb73c745681
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Fri Aug 8 21:43:08 2014 -0500
+
+    update to website directory
+
+commit 81892e418f491eb8a8c2ee30542b3e93ca89f4d3
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Fri Aug 8 21:41:22 2014 -0500
+
+    update
+
+commit b187b4e6026e3e5ea974de071a70e192a607005e
+Author: alakhian <amar.lakhian@utexas.edu>
+Date:   Fri Aug 8 20:10:30 2014 -0500
+
+    FINAL API UPDATE
+
+commit 33eafed112a4b1d28fdb9dfcd92f11775173902b
+Author: Amar Lakhian <amar.lakhian@utexas.edu>
+Date:   Fri Aug 8 18:46:37 2014 -0500
+
+    update tech report close #32
+
+commit 0ac9b8d2df5fbd20924dc2e6bead218a120db439
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Thu Aug 7 19:21:49 2014 -0500
+
+    json example for testing purpose
+
+commit 7191fe6b83659f6d142cc22ca5b415fd16eecaad
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Thu Aug 7 19:17:09 2014 -0500
+
+    json example for testing purpose
+
+commit 3c0eab201707e17c1cb6792d6080240be2718d26
+Merge: 37729cf 4084ac7
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Thu Aug 7 19:13:44 2014 -0500
+
+    Merge branch 'master' of https://github.com/alakhian/cs373-idb
+
+commit 4084ac7648ca2b7fbf40c1cbd2f124382e25a96a
+Author: Travis Carpenter <slifer220921@yahoo.com>
+Date:   Wed Aug 6 13:29:42 2014 -0500
+
+    converted to a .txt with 3/4 questions answered fully
+
+commit ae6b99b22ab2d4c790b1cee39052ff9ae4fc1daf
+Author: Travis Carpenter <slifer220921@yahoo.com>
+Date:   Wed Aug 6 12:58:30 2014 -0500
+
+    3/4 questions answered
+
+commit 913cc677eb231c5f14e9667b064719b2fb724492
+Author: Travis Carpenter <slifer220921@yahoo.com>
+Date:   Wed Aug 6 12:51:19 2014 -0500
+
+    3/4 questions answered
+
+commit 2c087f137cbbcf149879c871b0d3021c42f51218
+Author: Travis Carpenter <slifer220921@yahoo.com>
+Date:   Wed Aug 6 12:37:44 2014 -0500
+
+    2/4 questions answered
+
+commit fdd4e6c034e4ac334275dfdd216d73dc4f3b957c
+Author: Travis Carpenter <slifer220921@yahoo.com>
+Date:   Wed Aug 6 12:19:46 2014 -0500
+
+    our site critique, 1/4 questions completed.
+
+commit a0ed31caeaf96a95615638827e87601ce35f4e7a
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Wed Aug 6 12:09:12 2014 -0500
+
+    Added preliminary critique of other group's website
+
+commit 996e3eee6f3885ffd9f6ba46b574edd61b67f4a5
+Author: Brian Tetzlaff <briantetzlaff@gmail.com>
+Date:   Fri Jul 25 11:52:33 2014 -0500
+
+    updated log
+
 commit 374c275f61445fc6e308c65e03021524000b651e
 Author: Amar Lakhian <amar.lakhian@utexas.edu>
 Date:   Fri Jul 25 11:50:45 2014 -0500
@@ -57,6 +148,12 @@ Author: Brian Tetzlaff <briantetzlaff@gmail.com>
 Date:   Thu Jul 24 13:17:52 2014 -0500
 
     updated technical report for new models+tests #29
+
+commit 37729cf4ff9fc9ffcf4b95b3b2e49e4d0c0bd483
+Author: Lawrence Choi <lyc99@utexas.edu>
+Date:   Thu Jul 24 13:02:09 2014 -0500
+
+    changed twitter_widget
 
 commit 04acb7c1ccb4af6a7e9cd19f9483759da033a96f
 Author: Brian Tetzlaff <briantetzlaff@gmail.com>
